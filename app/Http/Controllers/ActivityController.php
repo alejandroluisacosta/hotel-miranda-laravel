@@ -62,8 +62,8 @@ class ActivityController extends Controller
             'notes' => ['required', 'string', 'max:255'],
         ]);
 
-        $activity = Activity::create(array_merge($validated, [
-            'user_id' => Auth::id() ?? 1,
+        $activity = Activity::findOrFail($id);
+        $activity->update(array_merge($validated, [
             'paid' => $request->paid ?? false,
             'satisfaction' => $request->satisfaction ?? 0,
         ]));
