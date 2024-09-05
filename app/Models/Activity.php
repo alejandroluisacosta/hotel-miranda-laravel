@@ -11,7 +11,7 @@ class Activity extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['type', 'dateTime', 'notes'];
+    protected $fillable = ['type', 'dateTime', 'notes', 'user_id'];
 
     public function user(): BelongsTo
     {

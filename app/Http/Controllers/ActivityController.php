@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Activity;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ActivityController extends Controller
 {
@@ -28,7 +29,7 @@ class ActivityController extends Controller
         ]);
 
         $activity = Activity::create(array_merge($validated, [
-            'user_id' => Auth::id(),
+            'user_id' => Auth::id() ?? 1,
             'paid' => $request->paid ?? false,
             'satisfaction' => $request->satisfaction ?? 0,
         ]));
@@ -62,7 +63,7 @@ class ActivityController extends Controller
         ]);
 
         $activity = Activity::create(array_merge($validated, [
-            'user_id' => Auth::id(),
+            'user_id' => Auth::id() ?? 1,
             'paid' => $request->paid ?? false,
             'satisfaction' => $request->satisfaction ?? 0,
         ]));
