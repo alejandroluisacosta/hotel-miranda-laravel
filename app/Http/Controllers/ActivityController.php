@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use app\Models\Activity;
+use App\Models\Activity;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ActivityController extends Controller
 {
@@ -12,7 +13,8 @@ class ActivityController extends Controller
      */
     public function index()
     {
-        return 'All activities';
+        $activities = Activity::all();
+        return response()->json(["activities" => $activities]);
     }
 
     /**
@@ -20,7 +22,19 @@ class ActivityController extends Controller
      */
     public function store(Request $request)
     {
-        return 'You saved a new Activity instance';
+        $validated = $request->validate([
+            'type' => ['required', 'string', 'max:255'],
+            'dateTime' => ['required', 'date'],
+            'notes' => ['required', 'string', 'max:255'],
+        ]);
+
+        $activity = Activity::create(array_merge($validated, [
+            'user_id' => Auth::id() ?? 1,
+            'paid' => $request->paid ?? false,
+            'satisfaction' => $request->satisfaction ?? 0,
+        ]));
+    
+        return response()->json(["activity" => $activity]);
     }
 
     /**
@@ -28,7 +42,13 @@ class ActivityController extends Controller
      */
     public function show(string $id)
     {
-        return 'One activity';
+        $activity = Activity::find($id);
+    
+        if (!$activity) {
+            return response()->json(['message' => 'Activity not found'], 404);
+        }
+    
+        return response()->json(['activity' => $activity]);
     }
 
     /**
@@ -36,7 +56,19 @@ class ActivityController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        return 'You\'ve modified an activity';
+        $validated = $request->validate([
+            'type' => ['required', 'string', 'max:255'],
+            'dateTime' => ['required', 'date'],
+            'notes' => ['required', 'string', 'max:255'],
+        ]);
+
+        $activity = Activity::create(array_merge($validated, [
+            'user_id' => Auth::id() ?? 1,
+            'paid' => $request->paid ?? false,
+            'satisfaction' => $request->satisfaction ?? 0,
+        ]));
+    
+        return response()->json(["activity" => $activity]);
     }
 
     /**
@@ -44,6 +76,14 @@ class ActivityController extends Controller
      */
     public function destroy(string $id)
     {
-        return 'You\'ve killed an activity :(';
+        $activity = Activity::find($id);
+    
+        if (!$activity) {
+            return response()->json(['message' => 'Activity not found'], 404);
+        }
+    
+        $activity->delete();
+    
+        return response()->json(['message' => 'Activity deleted successfully']);
     }
 }
