@@ -29,9 +29,7 @@ class ActivityController extends Controller
         ]);
 
         $activity = Activity::create(array_merge($validated, [
-            'user_id' => Auth::id() ?? 1,
-            'paid' => $request->paid ?? false,
-            'satisfaction' => $request->satisfaction ?? 0,
+            'user_id' => Auth::id(),
         ]));
     
         return response()->json(["activity" => $activity]);
@@ -42,11 +40,7 @@ class ActivityController extends Controller
      */
     public function show(string $id)
     {
-        $activity = Activity::find($id);
-    
-        if (!$activity) {
-            return response()->json(['message' => 'Activity not found'], 404);
-        }
+        $activity = Activity::findOrFail($id);
     
         return response()->json(['activity' => $activity]);
     }
@@ -76,13 +70,11 @@ class ActivityController extends Controller
      */
     public function destroy(string $id)
     {
-        $activity = Activity::find($id);
+        $deleted = Activity::destroy($id);
     
-        if (!$activity) {
+        if ($deleted === 0) {
             return response()->json(['message' => 'Activity not found'], 404);
         }
-    
-        $activity->delete();
     
         return response()->json(['message' => 'Activity deleted successfully']);
     }
