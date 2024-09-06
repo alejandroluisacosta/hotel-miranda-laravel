@@ -54,13 +54,12 @@ class ActivityController extends Controller
             'type' => ['required', 'string', 'max:255'],
             'dateTime' => ['required', 'date'],
             'notes' => ['required', 'string', 'max:255'],
+            'paid' => ['required', 'boolean'],
+            'satisfaction' => ['required', 'integer'],
         ]);
 
         $activity = Activity::findOrFail($id);
-        $activity->update(array_merge($validated, [
-            'paid' => $request->paid ?? false,
-            'satisfaction' => $request->satisfaction ?? 0,
-        ]));
+        $activity->update($validated);
     
         return response()->json(["activity" => $activity]);
     }
