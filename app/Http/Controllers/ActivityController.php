@@ -13,7 +13,7 @@ class ActivityController extends Controller
      */
     public function index()
     {
-        $activities = Activity::all();
+        $activities = Auth::user()->activities();
         return response()->json(["activities" => $activities]);
     }
 
@@ -70,10 +70,6 @@ class ActivityController extends Controller
     public function destroy(string $id)
     {
         $deleted = Activity::destroy($id);
-    
-        if ($deleted === 0) {
-            return response()->json(['message' => 'Activity not found'], 404);
-        }
     
         return response()->json(['message' => 'Activity deleted successfully']);
     }
