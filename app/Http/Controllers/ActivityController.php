@@ -74,3 +74,5 @@ class ActivityController extends Controller
         return response()->json(['message' => 'Activity deleted successfully']);
     }
 }
+
+
