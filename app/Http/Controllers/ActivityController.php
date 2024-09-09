@@ -13,8 +13,8 @@ class ActivityController extends Controller
      */
     public function index()
     {
-        $activities = Auth::user()->activities();
-        return response()->json(["activities" => $activities]);
+        $activities = Auth::user()->activities()->get();
+        return view('activities.index', ['activities' => $activities]);
     }
 
     /**
@@ -23,16 +23,18 @@ class ActivityController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'type' => ['required', 'string', 'max:255'],
+            'type' => ['required', 'string', 'in:Surf,Windsurf,Kayak,ATV,Hot air baloon'],
             'dateTime' => ['required', 'date'],
             'notes' => ['required', 'string', 'max:255'],
         ]);
 
         $activity = Activity::create(array_merge($validated, [
-            'user_id' => Auth::id(),
+            'user_id' => Auth::user()->id,
         ]));
+
+        $activities = Auth::user()->activities()->get();
     
-        return response()->json(["activity" => $activity]);
+        return view('activities.index', ['activities' => $activities]);
     }
 
     /**
@@ -42,7 +44,7 @@ class ActivityController extends Controller
     {
         $activity = Activity::findOrFail($id);
     
-        return response()->json(['activity' => $activity]);
+        return view('activities.single', ['activity' => $activity]);
     }
 
     /**
@@ -51,7 +53,7 @@ class ActivityController extends Controller
     public function update(Request $request, string $id)
     {
         $validated = $request->validate([
-            'type' => ['required', 'string', 'max:255'],
+            'type' => ['required', 'string', 'in:Surf,Windsurf,Kayak,ATV,Hot air baloon'],
             'dateTime' => ['required', 'date'],
             'notes' => ['required', 'string', 'max:255'],
             'paid' => ['required', 'boolean'],
@@ -61,7 +63,7 @@ class ActivityController extends Controller
         $activity = Activity::findOrFail($id);
         $activity->update($validated);
     
-        return response()->json(["activity" => $activity]);
+        return view('activities.single', ['activity' => $activity]);
     }
 
     /**
@@ -74,5 +76,3 @@ class ActivityController extends Controller
         return response()->json(['message' => 'Activity deleted successfully']);
     }
 }
-
-
