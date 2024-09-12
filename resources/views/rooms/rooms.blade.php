@@ -1,3 +1,4 @@
+@extends('layouts.app') 
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,35 +26,10 @@
           </style>
     </head>
 <body>
-    <div class="header-container">
-        <div class="black-strip"></div>
-        <p class="slogan">We make you feel comfortable</p>
-        <header class="header">
-            <span class="hamburger-menu material-symbols-outlined">
-            menu
-            </span>
-            <div class="logo">
-                <a href="/"><p>H</p></a>
-            </div>
-            <a href="/"><img class="hotel-name" src="/assets/HotelName.svg" description="Hotel Name"></a>
-            <ul class="desktop-nav">
-            <a href="/about.html"><li class="nav-link">About Us</li></a>
-            <a href="/rooms.html"><li class="nav-link">Rooms</li></a>
-            <a href="/offers.html"><li class="nav-link">Offers</li></a>
-            <a href="/contact.html"><li class="nav-link">Contact</li></a>
-            </ul>
-            <img class="icon icon--profile" src="./assets/User.svg"/>
-            <img class="icon icon--search" src="./assets/Search.svg"/>
-        </header>
-        <nav class="mobile-nav">
-            <ul>
-            <a href="/about.html"><li class="nav-link">About Us</li></a>
-            <a href="/rooms.html"><li class="nav-link">Rooms</li></a>
-            <a href="/offers.html"><li class="nav-link">Offers</li></a>
-            <a href="/contact.html"><li class="nav-link">Contact</li></a>
-            </ul>
-        </nav>
-    </div>
+    @section('header')
+          @parent
+    @show
+    @section('content')
     <section class="banner banner--rooms">
         <p class="section-name section-name--1">The Ultimate Luxury</p>
         <h1 class="section-title section-title--1">Ultimate Room</h1>
@@ -67,15 +43,15 @@
     </section>
     <section class="room-list">
         <article class="room-list__room" onclick="window.location.href='room-details.html'">
-            <img src="../assets/HotelRoom.jpeg"/>
+            <img src="/assets/images/HotelRoom.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="./assets/Bed.svg">
-                <img class="icon" src="./assets/Wifi.svg">
-                <img class="icon" src="./assets/Car.svg">
-                <img class="icon" src="./assets/Snow.svg">
-                <img class="icon" src="./assets/Gym.svg">
-                <img class="icon" src="./assets/Cigar.svg">
-                <img class="icon" src="./assets/Drink.svg">
+                <img class="icon" src="/assets/images/Bed.svg">
+                <img class="icon" src="/assets/images/Wifi.svg">
+                <img class="icon" src="/assets/images/Car.svg">
+                <img class="icon" src="/assets/images/Snow.svg">
+                <img class="icon" src="/assets/images/Gym.svg">
+                <img class="icon" src="/assets/images/Cigar.svg">
+                <img class="icon" src="/assets/images/Drink.svg">
             </article> 
             <article class="room-description-card room-description-card--rooms-page">
                 <h2 class="title">Minimal Duplex Room</h2>
@@ -217,83 +193,10 @@
           </li>
         </ul>
       </nav>
-    <footer class="footer">
-        <div class="footer__background">
-            <div class="hotel-info">
-              <div class="logo-container">
-              <div class="logo">H</div>
-              <img class="hotel-name" src="./assets/HotelName-Footer.svg">
-              </div>
-              <p class="description">
-              Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
-              </p>
-              <div class="social">
-              <div class="icon-container">
-                  <img class="icon" src="./assets/Facebook.svg"/>
-              </div>
-              <div class="icon-container icon-container--twitter">
-                  <img class="icon" src="./assets/Twitter.svg"/>
-              </div>
-              <div class="icon-container">
-                  <img class="icon" src="./assets/Behance.svg"/>
-              </div>
-              <div class="icon-container">
-                  <img class="icon" src="./assets/LinkedIn.svg"/>
-              </div>
-              <div class="icon-container">
-                  <img class="icon" src="./assets/YouTube.svg"/>
-              </div>
-              </div>
-            </div>
-            <div class="services">
-              <p class="services">Services</p>
-              <div class="services-container">
-                  <div>
-                  <p>+ Restaurant & Bar</p>
-                  <p>+ Swimming Pool</p>
-                  <p>+ Wellness & Spa</p>
-                  <p>+ Restaurant</p>
-                  <p>+ Conference Room</p>
-                  <p>+ Coctail Party House</p>
-                  </div>
-                  <div>
-                  <p>+ Gaming Zone</p>
-                  <p>+ Marriage Party</p>
-                  <p>+ Party Planning</p>
-                  <p>+ Tour Consultancy</p>
-                  </div>
-              </div>
-            </div>
-            <div class="contact">
-            <p class="contact__title">Contact Us</p>
-            <div class="contact-container">
-                <img class="icon" src="/assets/Phone.svg"/>
-                <div class="text-container">
-                <p class="name">Phone Number</p>
-                <p class="value">+987 876 765 76 577</p>
-                </div>
-            </div>
-            <div class="contact-container">
-                <img class="icon" src="/assets/Email.svg"/>
-                <div class="text-container">
-                <p class="name">Email</p>
-                <p class="value">info@hotelmiranda.com</p>
-                </div>
-            </div>
-            <div class="contact-container contact-container--last">
-                <img class="icon" src="/assets/Location.svg"/>
-                <div class="text-container">
-                <p class="name">Location</p>
-                <p class="value">555 Main Street, Colorado USA.</p>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="legal-info">
-            <p class="copyright">Copyright by@Example - 2020</p>
-            <p class="terms">Terms of use&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Privacy Environment Policy</p>
-        </div> 
-        </footer>
+    @endsection
+    @section('footer')
+          @parent
+    @show
 </body>
 <script src="../scripts/nav.js"></script>
 <script src="../scripts/header.js"></script>
