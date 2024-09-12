@@ -43,8 +43,8 @@
             <a href="/offers.html"><li class="nav-link">Offers</li></a>
             <a href="/contact.html"><li class="nav-link">Contact</li></a>
             </ul>
-            <img class="icon icon--profile" src="./assets/User.svg"/>
-            <img class="icon icon--search" src="./assets/Search.svg"/>
+            <img class="icon icon--profile" src="/assets/images/User.svg"/>
+            <img class="icon icon--search" src="/assets/images/Search.svg"/>
         </header>
         <nav class="mobile-nav">
             <ul>
@@ -65,26 +65,26 @@
                 <div class="hotel-info">
                 <div class="logo-container">
                 <div class="logo">H</div>
-                <img class="hotel-name" src="./assets/HotelName-Footer.svg">
+                <img class="hotel-name" src="/assets/images/HotelName-Footer.svg">
                 </div>
                 <p class="description">
                 Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
                 </p>
                 <div class="social">
                 <div class="icon-container">
-                    <img class="icon" src="./assets/Facebook.svg"/>
+                    <img class="icon" src="/assets/images/Facebook.svg"/>
                 </div>
                 <div class="icon-container icon-container--twitter">
-                    <img class="icon" src="./assets/Twitter.svg"/>
+                    <img class="icon" src="./assets/images/Twitter.svg"/>
                 </div>
                 <div class="icon-container">
-                    <img class="icon" src="./assets/Behance.svg"/>
+                    <img class="icon" src="/assets/images/Behance.svg"/>
                 </div>
                 <div class="icon-container">
-                    <img class="icon" src="./assets/LinkedIn.svg"/>
+                    <img class="icon" src="/assets/images/LinkedIn.svg"/>
                 </div>
                 <div class="icon-container">
-                    <img class="icon" src="./assets/YouTube.svg"/>
+                    <img class="icon" src="/assets/images/YouTube.svg"/>
                 </div>
                 </div>
                 </div>
@@ -110,21 +110,21 @@
                 <div class="contact">
                 <p class="contact__title">Contact Us</p>
                 <div class="contact-container">
-                    <img class="icon" src="/assets/Phone.svg"/>
+                    <img class="icon" src="/assets/images/Phone.svg"/>
                     <div class="text-container">
                     <p class="name">Phone Number</p>
                     <p class="value">+987 876 765 76 577</p>
                     </div>
                 </div>
                 <div class="contact-container">
-                    <img class="icon" src="/assets/Email.svg"/>
+                    <img class="icon" src="/assets/images/Email.svg"/>
                     <div class="text-container">
                     <p class="name">Email</p>
                     <p class="value">info@hotelmiranda.com</p>
                     </div>
                 </div>
                 <div class="contact-container contact-container--last">
-                    <img class="icon" src="/assets/Location.svg"/>
+                    <img class="icon" src="/assets/images/Location.svg"/>
                     <div class="text-container">
                     <p class="name">Location</p>
                     <p class="value">555 Main Street, Colorado USA.</p>
@@ -138,5 +138,8 @@
             </div> 
         </footer>
     @show
-    </body>
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/swiper.js"></script>
+</body>
 </html>
