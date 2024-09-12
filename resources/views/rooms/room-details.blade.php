@@ -25,9 +25,6 @@
           }
           </style>
     </head>
-@section('header')
-    @parent
-@endsection
 @section('content')
     <section class="banner banner--room-details">
         <p class="section-name section-name--1">The Ultimate Luxury</p>
@@ -216,8 +213,4 @@
         </div>
     </section>
 @endsection
-@section('footer')
-    @parent
-@endsection
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</html>

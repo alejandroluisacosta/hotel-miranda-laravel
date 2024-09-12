@@ -1,8 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Rooms')
-@section('header')
-    @parent
-@endsection
+@section('title', 'About')
 @section('content')
     <section class="banner banner--about">
         <p class="section-name section-name--1">The Ultimate Luxury</p>
@@ -183,8 +180,5 @@
             <div class="single-image-container" style="background-image: url('/assets/Sunset-View.jpeg');">
             </div>
           </div>
-      </section>
-      @endsection
-@section('footer')
-        @parent
+    </section>
 @endsection
