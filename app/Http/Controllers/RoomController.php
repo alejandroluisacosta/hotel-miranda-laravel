@@ -13,6 +13,7 @@ class RoomController extends Controller
     }
 
     public function show(string $id) {
-        return view('rooms.room-details');
+        $room = Room::with(['bookings', 'amenities', 'images'])->findOrFail($id);
+        return view('rooms.room-details', ['room' => $room]);
     }
 }

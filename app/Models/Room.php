@@ -5,9 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use App\Models\Booking;
 use App\Models\Amenity;
 use App\Models\Image;
+use App\Models\RoomType;
+use App\Models\RoomTypeImage;
 
 class Room extends Model
 {
@@ -15,16 +19,23 @@ class Room extends Model
 
     public function bookings(): HasMany
     {
-        return $this->hasMany(Booking::class);
+        return $this->hasMany(Booking::class, 'roomId');
     }
 
-    public function amenities(): HasMany
+    public function amenities(): BelongsToMany
     {
-        return $this->hasMany(Amenity::class);
+        return $this->belongsToMany(Amenity::class, 'rooms_amenities', 'roomId', 'amenityId');
     }
 
-    public function images(): HasMany
+    public function images(): HasManyThrough
     {
-        return $this->hasMany(Amenity::class);
+        return $this->hasManyThrough(
+            Image::class,
+            RoomTypeImage::class,
+            'roomType',
+            'id',
+            'id',
+            'imageId'
+        );
     }
 }

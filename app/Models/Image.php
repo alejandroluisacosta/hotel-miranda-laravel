@@ -10,8 +10,8 @@ class Image extends Model
 {
     use HasFactory;
 
-    public function room(): BelongsTo
+    public function roomTypes(): BelongsToMany
     {
-        return $this->belongsTo(Room::class);
+        return $this->belongsToMany(RoomType::class, 'room_types_images', 'imageId', 'roomType');
     }
 }

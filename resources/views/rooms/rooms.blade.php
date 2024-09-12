@@ -35,7 +35,7 @@
             <div class="logo">
                 <a href="/"><p>H</p></a>
             </div>
-            <a href="/"><img class="hotel-name" src="./assets/HotelName.svg" description="Hotel Name"></a>
+            <a href="/"><img class="hotel-name" src="/assets/HotelName.svg" description="Hotel Name"></a>
             <ul class="desktop-nav">
             <a href="/about.html"><li class="nav-link">About Us</li></a>
             <a href="/rooms.html"><li class="nav-link">Rooms</li></a>
