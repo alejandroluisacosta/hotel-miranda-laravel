@@ -1,35 +1,9 @@
-@extends('layouts.app') 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Rooms</title>
-        <link rel="stylesheet" href="/assets/css/app.css"/>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <style>
-          .material-symbols-outlined {
-            font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24
-          }
-          </style>
-    </head>
-<body>
-    @section('header')
-          @parent
-    @show
-    @section('content')
+@extends('layouts.app')
+@section('title', 'Rooms')
+@section('header')
+    @parent
+@endsection
+@section('content')
     <section class="banner banner--rooms">
         <p class="section-name section-name--1">The Ultimate Luxury</p>
         <h1 class="section-title section-title--1">Ultimate Room</h1>
@@ -176,28 +150,24 @@
         </article>
     </section>
     <nav class="rooms-pagination">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link page-link--icon" href="#">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link page-link--selected" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">...</a></li>
-          <li class="page-item"><a class="page-link" href="#">10</a></li>
-            <a class="page-link page-link--icon" href="#">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    @endsection
-    @section('footer')
-          @parent
-    @show
-</body>
-<script src="../scripts/nav.js"></script>
-<script src="../scripts/header.js"></script>
-</html>
+    <ul class="pagination">
+        <li class="page-item">
+        <a class="page-link page-link--icon" href="#">
+            <span aria-hidden="true">&laquo;</span>
+        </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link page-link--selected" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">...</a></li>
+        <li class="page-item"><a class="page-link" href="#">10</a></li>
+        <a class="page-link page-link--icon" href="#">
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+        </li>
+    </ul>
+    </nav>
+@endsection
+@section('footer')
+        @parent
+@endsection
