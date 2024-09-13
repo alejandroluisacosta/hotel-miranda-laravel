@@ -49,7 +49,7 @@
                     <p class="divisor">/Night</p>
                 </div>
             </div>
-            <img src="./assets/HotelRoom2.jpeg"/>
+            <img src="/assets/images/HotelRoom2.jpeg"/>
             <p class="room-details-description room-details-description--desktop">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
             </p>
@@ -61,12 +61,12 @@
             <label class="label" for="check-in-date">Check In</label>
             <div class="input" id="check-in-date">
                 <p>Fri, 14th June 2020</p>
-                <img class="icon" src="./assets/Calendar.svg"/>
+                <img class="icon" src="/assets/images/Calendar.svg"/>
             </div>
             <label class="label" for="check-out-date">Check Out</label>
             <div class="input" id="check-out-date">
                 <p>Sun, 16th June 2020</p>
-                <img class="icon" src="./assets/Calendar.svg"/>
+                <img class="icon" src="/assets/images/Calendar.svg"/>
             </div>
             <button>CHECK AVAILABILITY</button>
         </form>
@@ -81,68 +81,68 @@
         <hr>
         <div class="amenities-container">
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Air-Conditioner.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Air-Conditioner.svg"/>
                 <p class="name">Air conditioner</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Breakfast.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Breakfast.svg"/>
                 <p class="name">Breakfast</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Cleaning.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Cleaning.svg"/>
                 <p class="name">Cleaning</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Grocery.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Grocery.svg"/>
                 <p class="name">Grocery</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Shop.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Shop.svg"/>
                 <p class="name">Shop near</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Support.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Support.svg"/>
                 <p class="name">24/7 Online Support</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Security.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Security.svg"/>
                 <p class="name">Smart Security</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Wifi.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Wifi.svg"/>
                 <p class="name">High speed wifi</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Kitchen.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Kitchen.svg"/>
                 <p class="name">Kitchen</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Shower.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Shower.svg"/>
                 <p class="name">Shower</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Bed.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Bed.svg"/>
                 <p class="name">Single bed</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Towel.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Towel.svg"/>
                 <p class="name">Towels</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Locker.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Locker.svg"/>
                 <p class="name">Strong Locker</p>
             </div>
             <div class="amenity">
-                <img class="icon" src="./assets/Amenities-Team.svg"/>
+                <img class="icon" src="/assets/images/Amenities-Team.svg"/>
                 <p class="name">Expert Team</p>
             </div>
         </div>
     </section>
     <section class="founder-info">
         <div class="founder-image">
-            <img class="founder-image" src="./assets/Founder-Image.jpeg"/>
+            <img class="founder-image" src="/assets/images/Founder-Image.jpeg"/>
             <div class="icon-container">
-                <img class="icon" src="/assets/Check.svg"/>
+                <img class="icon" src="/assets/images/Check.svg"/>
             </div>
         </div>
         <p class="founder-name">Timothy Ferriss</p>
@@ -164,16 +164,16 @@
         <div class="swiper swiper--related-rooms">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="../assets/HotelRoom2.jpeg"/>
+                    <img src="/assets/images/HotelRoom2.jpeg"/>
                     <article class="room-description-card room-description-card--rooms-page">
                         <article class="icon-bar">
-                            <img class="icon" src="./assets/Bed.svg">
-                            <img class="icon" src="./assets/Wifi.svg">
-                            <img class="icon" src="./assets/Car.svg">
-                            <img class="icon" src="./assets/Snow.svg">
-                            <img class="icon" src="./assets/Gym.svg">
-                            <img class="icon" src="./assets/Cigar.svg">
-                            <img class="icon" src="./assets/Drink.svg">
+                            <img class="icon" src="/assets/images/Bed.svg">
+                            <img class="icon" src="/assets/images/Wifi.svg">
+                            <img class="icon" src="/assets/images/Car.svg">
+                            <img class="icon" src="/assets/images/Snow.svg">
+                            <img class="icon" src="/assets/images/Gym.svg">
+                            <img class="icon" src="/assets/images/Cigar.svg">
+                            <img class="icon" src="/assets/images/Drink.svg">
                           </article> 
                         <h2 class="title">Romantic Double Room</h2>
                       <p class="description">
@@ -186,16 +186,16 @@
                     </article>
                 </div>
                 <div class="swiper-slide">
-                    <img src="../assets/HotelRoom3.jpeg"/>
+                    <img src="/assets/images/HotelRoom3.jpeg"/>
                     <article class="room-description-card room-description-card--rooms-page">
                         <article class="icon-bar">
-                            <img class="icon" src="./assets/Bed.svg">
-                            <img class="icon" src="./assets/Wifi.svg">
-                            <img class="icon" src="./assets/Car.svg">
-                            <img class="icon" src="./assets/Snow.svg">
-                            <img class="icon" src="./assets/Gym.svg">
-                            <img class="icon" src="./assets/Cigar.svg">
-                            <img class="icon" src="./assets/Drink.svg">
+                            <img class="icon" src="/assets/images/Bed.svg">
+                            <img class="icon" src="/assets/images/Wifi.svg">
+                            <img class="icon" src="/assets/images/Car.svg">
+                            <img class="icon" src="/assets/images/Snow.svg">
+                            <img class="icon" src="/assets/images/Gym.svg">
+                            <img class="icon" src="/assets/images/Cigar.svg">
+                            <img class="icon" src="/assets/images/Drink.svg">
                           </article> 
                         <h2 class="title">Luxury Honeymoon Room</h2>
                       <p class="description">

@@ -16,7 +16,7 @@
         </div>
     </section>
     <section class="room-list">
-        <article class="room-list__room" onclick="window.location.href='room-details.html'">
+        <article class="room-list__room" onclick="window.location.href='room-details'">
             <img src="/assets/images/HotelRoom.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
                 <img class="icon" src="/assets/images/Bed.svg">
@@ -38,7 +38,7 @@
                 </div>
             </article>
         </article>
-        <article class="room-list__room" onclick="window.location.href='room-details.html'">
+        <article class="room-list__room" onclick="window.location.href='room-details'">
             <img src="/assets/images/HotelRoom2.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
                 <img class="icon" src="/assets/images/Bed.svg">
@@ -60,7 +60,7 @@
                 </div>
             </article>
         </article>
-        <article class="room-list__room" onclick="window.location.href='room-details.html'">
+        <article class="room-list__room" onclick="window.location.href='room-details'">
             <img src="/assets/images/HotelRoom3.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
                 <img class="icon" src="/assets/images/Bed.svg">
@@ -82,7 +82,7 @@
                 </div>
             </article>
         </article>
-        <article class="room-list__room" onclick="window.location.href='room-details.html'">
+        <article class="room-list__room" onclick="window.location.href='room-details'">
             <img src="/assets/images/Hotel-Room5.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
                 <img class="icon" src="/assets/images/Bed.svg">
@@ -104,7 +104,7 @@
                 </div>
             </article>
         </article>
-        <article class="room-list__room" onclick="window.location.href='room-details.html'">
+        <article class="room-list__room" onclick="window.location.href='room-details'">
             <img src="/assets/images/Hotel-Room6.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
                 <img class="icon" src="/assets/images/Bed.svg">
@@ -126,7 +126,7 @@
                 </div>
             </article>
         </article>
-        <article class="room-list__room" onclick="window.location.href='room-details.html'">
+        <article class="room-list__room" onclick="window.location.href='room-details'">
             <img src="/assets/images/Hotel-Room7.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
                 <img class="icon" src="/assets/images/Bed.svg">
