@@ -4,8 +4,8 @@
       <h3 class="section-name section-name--1 section-name--base">THE ULTIMATE LUXURY EXPERIENCE</h3>
       <h1 class="section-title section-title--1">The Perfect Base For You</h1>
       <div class="header__buttons-container">
-        <button class="button base__button--1" onclick="window.location.href='about.html'">LEARN MORE</button>
-        <button class="button base__button--2" onclick="window.location.href='rooms.html'">SEE ROOMS</button>
+        <button class="button base__button--1" onclick="window.location.href='about'">LEARN MORE</button>
+        <button class="button base__button--2" onclick="window.location.href='rooms'">SEE ROOMS</button>
       </div>
     </section>
     <form class="availability">
@@ -35,16 +35,16 @@
             <p class="about__text">
               50+ years on the market. 15+ top locations around the globe. 10.000+ happy visitors every year. Highly-trained professionals in every field. Are you a fan of quality? Hotel Miranda was made for you.
             </p>
-            <button class="about__button" onclick="window.location.href='contact.html'">BOOK NOW</button>
+            <button class="about__button" onclick="window.location.href='contact'">BOOK NOW</button>
           </div>
         </section>
         <section class="brand-features">
         <div class="brand-features__feature-container brand-features__feature-container--1">
-          <div class="single-image-container" style="background-image: url('/assets/Professionals.jpeg');"></div>
+          <div class="single-image-container" style="background-image: url('/assets/images/Professionals.jpeg');"></div>
           <div>
             <div class="content content--1">
-              <img class="icon" src="./assets/StrongTeam.svg"/>
-              <img class="icon--diluted" src="./assets/StrongTeamDiluted.jpeg"/>
+              <img class="icon" src="/assets/images/StrongTeam.svg"/>
+              <img class="icon--diluted" src="/assets/images/StrongTeamDiluted.jpeg"/>
               <h3 class="title">Strong Team</h3>
               <p class="description">Elite professional ready to make you have your dream vacation. Your relaxation is our mission.</p>
             </div>
@@ -52,9 +52,9 @@
         </div>
         <div class="brand-features__feature-container brand-features__feature-container--2">
           <div class="brand-features__background-container">
-            <div class="single-image-container" style="background-image: url('/assets/Luxury-Room.jpeg');"></div>
+            <div class="single-image-container" style="background-image: url('/assets/images/Luxury-Room.jpeg');"></div>
             <div class="content content--2">
-              <img class="icon icon--calendar" src="./assets/ArrowCalendar.svg"/>
+              <img class="icon icon--calendar" src="/assets/images/ArrowCalendar.svg"/>
               <h3 class="title">Luxury Room</h3>
               <p class="description">Every detail matters at Miranda. If you visit our rooms, please be ready to fall in love.</p>
             </div>
@@ -66,25 +66,25 @@
       <p class="section-name">ROOMS</p>
       <h1 class="section-title">Hand Picked Rooms</h1>
       <article class="icon-bar icon-bar--mobile">
-        <img class="icon" src="./assets/Bed.svg">
-        <img class="icon" src="./assets/Wifi.svg">
-        <img class="icon" src="./assets/Car.svg">
-        <img class="icon" src="./assets/Snow.svg">
-        <img class="icon" src="./assets/Gym.svg">
-        <img class="icon" src="./assets/Cigar.svg">
-        <img class="icon" src="./assets/Drink.svg">
+        <img class="icon" src="/assets/images/Bed.svg">
+        <img class="icon" src="/assets/images/Wifi.svg">
+        <img class="icon" src="/assets/images/Car.svg">
+        <img class="icon" src="/assets/images/Snow.svg">
+        <img class="icon" src="/assets/images/Gym.svg">
+        <img class="icon" src="/assets/images/Cigar.svg">
+        <img class="icon" src="/assets/images/Drink.svg">
       </article> 
       <div class="swiper swiper--rooms--mobile">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <article class="icon-bar icon-bar--desktop">
-            <img class="icon" src="./assets/Bed.svg">
-            <img class="icon" src="./assets/Wifi.svg">
-            <img class="icon" src="./assets/Car.svg">
-            <img class="icon" src="./assets/Snow.svg">
-            <img class="icon" src="./assets/Gym.svg">
-            <img class="icon" src="./assets/Cigar.svg">
-            <img class="icon" src="./assets/Drink.svg">
+            <img class="icon" src="/assets/images/Bed.svg">
+            <img class="icon" src="/assets/images/Wifi.svg">
+            <img class="icon" src="/assets/images/Car.svg">
+            <img class="icon" src="/assets/images/Snow.svg">
+            <img class="icon" src="/assets/images/Gym.svg">
+            <img class="icon" src="/assets/images/Cigar.svg">
+            <img class="icon" src="/assets/images/Drink.svg">
           </article> 
           <img class="image" src="../assets/HotelRoom.jpeg"/>
           <article class="room-description-card room-description-card--home">
@@ -98,13 +98,13 @@
         </div>
         <div class="swiper-slide">
           <article class="icon-bar icon-bar--desktop">
-            <img class="icon" src="./assets/Bed.svg">
-            <img class="icon" src="./assets/Wifi.svg">
-            <img class="icon" src="./assets/Car.svg">
-            <img class="icon" src="./assets/Snow.svg">
-            <img class="icon" src="./assets/Gym.svg">
-            <img class="icon" src="./assets/Cigar.svg">
-            <img class="icon" src="./assets/Drink.svg">
+            <img class="icon" src="/assets/images/Bed.svg">
+            <img class="icon" src="/assets/images/Wifi.svg">
+            <img class="icon" src="/assets/images/Car.svg">
+            <img class="icon" src="/assets/images/Snow.svg">
+            <img class="icon" src="/assets/images/Gym.svg">
+            <img class="icon" src="/assets/images/Cigar.svg">
+            <img class="icon" src="/assets/images/Drink.svg">
           </article> 
           <img class="image" src="../assets/HotelRoom2.jpeg"/>
             <article class="room-description-card room-description-card--home">
@@ -118,13 +118,13 @@
         </div>
         <div class="swiper-slide">
           <article class="icon-bar icon-bar--desktop">
-            <img class="icon" src="./assets/Bed.svg">
-            <img class="icon" src="./assets/Wifi.svg">
-            <img class="icon" src="./assets/Car.svg">
-            <img class="icon" src="./assets/Snow.svg">
-            <img class="icon" src="./assets/Gym.svg">
-            <img class="icon" src="./assets/Cigar.svg">
-            <img class="icon" src="./assets/Drink.svg">
+            <img class="icon" src="/assets/images/Bed.svg">
+            <img class="icon" src="/assets/images/Wifi.svg">
+            <img class="icon" src="/assets/images/Car.svg">
+            <img class="icon" src="/assets/images/Snow.svg">
+            <img class="icon" src="/assets/images/Gym.svg">
+            <img class="icon" src="/assets/images/Cigar.svg">
+            <img class="icon" src="/assets/images/Drink.svg">
           </article> 
           <img class="image" src="../assets/HotelRoom3.jpeg"/>
                     <article class="room-description-card room-description-card--home">
@@ -138,13 +138,13 @@
         </div>
         <div class="swiper-slide">
           <article class="icon-bar icon-bar--desktop">
-            <img class="icon" src="./assets/Bed.svg">
-            <img class="icon" src="./assets/Wifi.svg">
-            <img class="icon" src="./assets/Car.svg">
-            <img class="icon" src="./assets/Snow.svg">
-            <img class="icon" src="./assets/Gym.svg">
-            <img class="icon" src="./assets/Cigar.svg">
-            <img class="icon" src="./assets/Drink.svg">
+            <img class="icon" src="/assets/images/Bed.svg">
+            <img class="icon" src="/assets/images/Wifi.svg">
+            <img class="icon" src="/assets/images/Car.svg">
+            <img class="icon" src="/assets/images/Snow.svg">
+            <img class="icon" src="/assets/images/Gym.svg">
+            <img class="icon" src="/assets/images/Cigar.svg">
+            <img class="icon" src="/assets/images/Drink.svg">
           </article> 
           <img class="image" src="../assets/HotelRoom.jpeg"/>
           <article class="room-description-card room-description-card--home">
@@ -158,13 +158,13 @@
         </div>
         <div class="swiper-slide">
           <article class="icon-bar icon-bar--desktop">
-            <img class="icon" src="./assets/Bed.svg">
-            <img class="icon" src="./assets/Wifi.svg">
-            <img class="icon" src="./assets/Car.svg">
-            <img class="icon" src="./assets/Snow.svg">
-            <img class="icon" src="./assets/Gym.svg">
-            <img class="icon" src="./assets/Cigar.svg">
-            <img class="icon" src="./assets/Drink.svg">
+            <img class="icon" src="/assets/images/Bed.svg">
+            <img class="icon" src="/assets/images/Wifi.svg">
+            <img class="icon" src="/assets/images/Car.svg">
+            <img class="icon" src="/assets/images/Snow.svg">
+            <img class="icon" src="/assets/images/Gym.svg">
+            <img class="icon" src="/assets/images/Cigar.svg">
+            <img class="icon" src="/assets/images/Drink.svg">
           </article> 
           <img class="image" src="../assets/HotelRoom2.jpeg"/>
             <article class="room-description-card room-description-card--home">
@@ -178,13 +178,13 @@
         </div>
         <div class="swiper-slide">
           <article class="icon-bar icon-bar--desktop">
-            <img class="icon" src="./assets/Bed.svg">
-            <img class="icon" src="./assets/Wifi.svg">
-            <img class="icon" src="./assets/Car.svg">
-            <img class="icon" src="./assets/Snow.svg">
-            <img class="icon" src="./assets/Gym.svg">
-            <img class="icon" src="./assets/Cigar.svg">
-            <img class="icon" src="./assets/Drink.svg">
+            <img class="icon" src="/assets/images/Bed.svg">
+            <img class="icon" src="/assets/images/Wifi.svg">
+            <img class="icon" src="/assets/images/Car.svg">
+            <img class="icon" src="/assets/images/Snow.svg">
+            <img class="icon" src="/assets/images/Gym.svg">
+            <img class="icon" src="/assets/images/Cigar.svg">
+            <img class="icon" src="/assets/images/Drink.svg">
           </article> 
           <img class="image" src="../assets/HotelRoom3.jpeg"/>
                     <article class="room-description-card room-description-card--home">
@@ -202,17 +202,17 @@
       </div>
       <div class="swiper swiper--rooms--desktop">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" onclick="window.location.href='room-details.html'">
+          <div class="swiper-slide" onclick="window.location.href='room-details'">
             <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="./assets/Bed.svg">
-              <img class="icon" src="./assets/Wifi.svg">
-              <img class="icon" src="./assets/Car.svg">
-              <img class="icon" src="./assets/Snow.svg">
-              <img class="icon" src="./assets/Gym.svg">
-              <img class="icon" src="./assets/Cigar.svg">
-              <img class="icon" src="./assets/Drink.svg">
+              <img class="icon" src="/assets/images/Bed.svg">
+              <img class="icon" src="/assets/images/Wifi.svg">
+              <img class="icon" src="/assets/images/Car.svg">
+              <img class="icon" src="/assets/images/Snow.svg">
+              <img class="icon" src="/assets/images/Gym.svg">
+              <img class="icon" src="/assets/images/Cigar.svg">
+              <img class="icon" src="/assets/images/Drink.svg">
             </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/HotelRoom.jpeg');"></div>
+            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom.jpeg');"></div>
             <article class="room-description-card room-description-card--home">
               <h2 class="title">Minimal Duplex Room</h2>
               <p class="description">
@@ -222,17 +222,17 @@
               <p class="divisor">/Night</p>
             </article>
           </div>
-          <div class="swiper-slide" onclick="window.location.href='room-details.html'">
+          <div class="swiper-slide" onclick="window.location.href='room-details'">
             <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="./assets/Bed.svg">
-              <img class="icon" src="./assets/Wifi.svg">
-              <img class="icon" src="./assets/Car.svg">
-              <img class="icon" src="./assets/Snow.svg">
-              <img class="icon" src="./assets/Gym.svg">
-              <img class="icon" src="./assets/Cigar.svg">
-              <img class="icon" src="./assets/Drink.svg">
+              <img class="icon" src="/assets/images/Bed.svg">
+              <img class="icon" src="/assets/images/Wifi.svg">
+              <img class="icon" src="/assets/images/Car.svg">
+              <img class="icon" src="/assets/images/Snow.svg">
+              <img class="icon" src="/assets/images/Gym.svg">
+              <img class="icon" src="/assets/images/Cigar.svg">
+              <img class="icon" src="/assets/images/Drink.svg">
             </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/HotelRoom2.jpeg');"></div>
+            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom2.jpeg');"></div>
             <article class="room-description-card room-description-card--home">
               <h2 class="title">Romantic Duplex Room</h2>
               <p class="description">
@@ -242,17 +242,17 @@
               <p class="divisor">/Night</p>
             </article>
           </div>
-          <div class="swiper-slide" onclick="window.location.href='room-details.html'">
+          <div class="swiper-slide" onclick="window.location.href='room-details'">
             <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="./assets/Bed.svg">
-              <img class="icon" src="./assets/Wifi.svg">
-              <img class="icon" src="./assets/Car.svg">
-              <img class="icon" src="./assets/Snow.svg">
-              <img class="icon" src="./assets/Gym.svg">
-              <img class="icon" src="./assets/Cigar.svg">
-              <img class="icon" src="./assets/Drink.svg">
+              <img class="icon" src="/assets/images/Bed.svg">
+              <img class="icon" src="/assets/images/Wifi.svg">
+              <img class="icon" src="/assets/images/Car.svg">
+              <img class="icon" src="/assets/images/Snow.svg">
+              <img class="icon" src="/assets/images/Gym.svg">
+              <img class="icon" src="/assets/images/Cigar.svg">
+              <img class="icon" src="/assets/images/Drink.svg">
             </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/HotelRoom3.jpeg');"></div>
+            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom3.jpeg');"></div>
             <article class="room-description-card room-description-card--home">
               <h2 class="title">Luxury Honeymoon Room</h2>
               <p class="description">
@@ -262,17 +262,17 @@
               <p class="divisor">/Night</p>
             </article>
           </div>
-          <div class="swiper-slide" onclick="window.location.href='room-details.html'">
+          <div class="swiper-slide" onclick="window.location.href='room-details'">
             <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="./assets/Bed.svg">
-              <img class="icon" src="./assets/Wifi.svg">
-              <img class="icon" src="./assets/Car.svg">
-              <img class="icon" src="./assets/Snow.svg">
-              <img class="icon" src="./assets/Gym.svg">
-              <img class="icon" src="./assets/Cigar.svg">
-              <img class="icon" src="./assets/Drink.svg">
+              <img class="icon" src="/assets/images/Bed.svg">
+              <img class="icon" src="/assets/images/Wifi.svg">
+              <img class="icon" src="/assets/images/Car.svg">
+              <img class="icon" src="/assets/images/Snow.svg">
+              <img class="icon" src="/assets/images/Gym.svg">
+              <img class="icon" src="/assets/images/Cigar.svg">
+              <img class="icon" src="/assets/images/Drink.svg">
             </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/HotelRoom.jpeg');"></div>
+            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom.jpeg');"></div>
             <article class="room-description-card room-description-card--home">
               <h2 class="title">Minimal Duplex Room</h2>
               <p class="description">
@@ -282,17 +282,17 @@
               <p class="divisor">/Night</p>
             </article>
           </div>
-          <div class="swiper-slide" onclick="window.location.href='room-details.html'">
+          <div class="swiper-slide" onclick="window.location.href='room-details'">
             <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="./assets/Bed.svg">
-              <img class="icon" src="./assets/Wifi.svg">
-              <img class="icon" src="./assets/Car.svg">
-              <img class="icon" src="./assets/Snow.svg">
-              <img class="icon" src="./assets/Gym.svg">
-              <img class="icon" src="./assets/Cigar.svg">
-              <img class="icon" src="./assets/Drink.svg">
+              <img class="icon" src="/assets/images/Bed.svg">
+              <img class="icon" src="/assets/images/Wifi.svg">
+              <img class="icon" src="/assets/images/Car.svg">
+              <img class="icon" src="/assets/images/Snow.svg">
+              <img class="icon" src="/assets/images/Gym.svg">
+              <img class="icon" src="/assets/images/Cigar.svg">
+              <img class="icon" src="/assets/images/Drink.svg">
             </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/HotelRoom2.jpeg');"></div>
+            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom2.jpeg');"></div>
               <article class="room-description-card room-description-card--home">
               <h2 class="title">Romantic Duplex Room</h2>
               <p class="description">
@@ -302,17 +302,17 @@
               <p class="divisor">/Night</p>
             </article>
           </div>
-          <div class="swiper-slide" onclick="window.location.href='room-details.html'">
+          <div class="swiper-slide" onclick="window.location.href='room-details'">
             <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="./assets/Bed.svg">
-              <img class="icon" src="./assets/Wifi.svg">
-              <img class="icon" src="./assets/Car.svg">
-              <img class="icon" src="./assets/Snow.svg">
-              <img class="icon" src="./assets/Gym.svg">
-              <img class="icon" src="./assets/Cigar.svg">
-              <img class="icon" src="./assets/Drink.svg">
+              <img class="icon" src="/assets/images/Bed.svg">
+              <img class="icon" src="/assets/images/Wifi.svg">
+              <img class="icon" src="/assets/images/Car.svg">
+              <img class="icon" src="/assets/images/Snow.svg">
+              <img class="icon" src="/assets/images/Gym.svg">
+              <img class="icon" src="/assets/images/Cigar.svg">
+              <img class="icon" src="/assets/images/Drink.svg">
             </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/HotelRoom3.jpeg');"></div>
+            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom3.jpeg');"></div>
             <article class="room-description-card room-description-card--home">
               <h2 class="title">Luxury Honeymoon Room</h2>
               <p class="description">
@@ -338,10 +338,10 @@
           </p>
         </div>
         <video autoplay muted loop>
-          <source src="./assets/Hotel-Video.mp4" type="video/mp4">
+          <source src="/assets/images/Hotel-Video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        <button class="button" onclick="window.location.href='contact.html'">BOOK NOW</button>
+        <button class="button" onclick="window.location.href='contact'">BOOK NOW</button>
       </section>
       <div class="decorative-square"></div>
     </div>
@@ -352,7 +352,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide core-feature">
             <div class="slide-container">
-              <img class="icon" src="./assets/Ratings.svg"/>
+              <img class="icon" src="/assets/images/Ratings.svg"/>
               <p class="number">01</p>
               <p class="title">High Ratings</p>
               <p class="description">
@@ -362,7 +362,7 @@
           </div>
           <div class="swiper-slide core-feature">
             <div class="slide-container">
-              <img class="icon" src="./assets/Watch.svg"/>
+              <img class="icon" src="/assets/images/Watch.svg"/>
               <p class="number">02</p>
               <p class="title">Quiet Hours</p>
               <p class="description">
@@ -372,7 +372,7 @@
           </div>
           <div class="swiper-slide core-feature">
             <div class="slide-container">
-              <img class="icon" src="./assets/Location-Facilities.svg"/>
+              <img class="icon" src="/assets/images/Location-Facilities.svg"/>
               <p class="number">03</p>
               <p class="title">Best Locations</p>
               <p class="description">
@@ -382,7 +382,7 @@
           </div>
           <div class="swiper-slide core-feature">
             <div class="slide-container">
-              <img class="icon" src="./assets/Cancellation.svg"/>
+              <img class="icon" src="/assets/images/Cancellation.svg"/>
               <p class="number">04</p>
               <p class="title">Free Cancellation</p>
               <p class="description">
@@ -392,7 +392,7 @@
           </div>
           <div class="swiper-slide core-feature">
             <div class="slide-container">
-              <img class="icon" src="./assets/Credit-Cards.png"/>
+              <img class="icon" src="/assets/images/Credit-Cards.png"/>
               <p class="number">05</p>
               <p class="title">Payment Options</p>
               <p class="description">
@@ -402,7 +402,7 @@
           </div>
           <div class="swiper-slide core-feature">
             <div class="slide-container">
-              <img class="icon" src="./assets/Medal.svg"/>
+              <img class="icon" src="/assets/images/Medal.svg"/>
               <p class="number">06</p>
               <p class="title">Special Offers</p>
               <p class="description">
@@ -415,8 +415,8 @@
     </div>
     </section>
     <section class="menu">
-      <img class="donut" src="assets/Donut.svg"/>
-      <img class="donut--desktop" src="assets/Donut-Desktop.svg"/>
+      <img class="donut" src="assets/images/Donut.svg"/>
+      <img class="donut--desktop" src="assets/images/Donut-Desktop.svg"/>
       <div class="title-container">
         <div class="title-subcontainer">
           <h2 class="section-name">MENU</h2>
@@ -432,7 +432,7 @@
           <div class="swiper-slide">
             <div class="dishes">
               <div class="dish">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Eggs-Bacon.jpeg');">
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Eggs-Bacon.jpeg');">
                 </div>
                 <div class="description">
                   <h4 class="name">Eggs & Bacon</h4>
@@ -440,129 +440,129 @@
                     A classic dish, eggs and bacon, prepared with the finest ingredients for a truly exceptional meal.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
               <div class="dish">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Coffee.jpeg');"></div>
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Coffee.jpeg');"></div>
                 <div class="description">
                   <h4 class="name">Tea or Cofee</h4>
                   <p>
                     Awaken your senses with our delicious infusions to either start your day or relax in the afternoon.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
               <div class="dish dish--last">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Chia.jpeg');"></div>
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Chia.jpeg');"></div>
                 <div class="description">
                   <h4 class="name">Chia Oatmeal</h4>
                   <p>
                     The solution for our healthy guests is here: Eat deliciously while taking care of your body.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="dishes">
               <div class="dish">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Fruit-Parfait.jpeg');"></div>
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Fruit-Parfait.jpeg');"></div>
                 <div class="description">
                   <h4 class="name">Fruit Parfait</h4>
                   <p>
                     Fruit, yogurt, fine cereals and syrup. The favorite choice for light breakfast eaters.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
               <div class="dish">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Marmalade.jpeg');"></div>
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Marmalade.jpeg');"></div>
                 <div class="description">
                   <h4 class="name">Marmalade Selection</h4>
                   <p>
                     Sweet. Refreshing. Intense. Once on the table, few can resist our gourmet marmalade selection.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
               <div class="dish dish--last">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Cheese-Selection.jpeg');"></div>
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Cheese-Selection.jpeg');"></div>
                 <div class="description">
                   <h4 class="name">Cheese Plate</h4>
                   <p>
                     Cheese + Wine + Miranda = A perfect evening talk.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="dishes">
               <div class="dish">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Eggs-Bacon.jpeg');"></div>
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Eggs-Bacon.jpeg');"></div>
                 <div class="description">
                   <h4 class="name">Eggs & Bacon</h4>
                   <p>
                     A classic dish, eggs and bacon, prepared with the finest ingredients for a truly exceptional meal.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
               <div class="dish">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Coffee.jpeg');"></div>
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Coffee.jpeg');"></div>
                 <div class="description">
                   <h4 class="name">Tea or Cofee</h4>
                   <p>
                     Awaken your senses with our delicious infusions to either start your day or relax in the afternoon.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
               <div class="dish dish--last">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Chia.jpeg');"></div>
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Chia.jpeg');"></div>
                 <div class="description">
                   <h4 class="name">Chia Oatmeal</h4>
                   <p>
                     The solution for our healthy guests is here: Eat deliciously while taking care of your body.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="dishes">
               <div class="dish">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Fruit-Parfait.jpeg');"></div>
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Fruit-Parfait.jpeg');"></div>
                 <div class="description">
                   <h4 class="name">Fruit Parfait</h4>
                   <p>
                     Fruit, yogurt, fine cereals and syrup. The favorite choice for light breakfast eaters.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
               <div class="dish">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Marmalade.jpeg');"></div>
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Marmalade.jpeg');"></div>
                 <div class="description">
                   <h4 class="name">Marmalade Selection</h4>
                   <p>
                     Sweet. Refreshing. Intense. Once on the table, few can resist our gourmet marmalade selection.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
               <div class="dish dish--last">
-                <div class="swiper-slide single-image-container" style="background-image: url('/assets/Cheese-Selection.jpeg');"></div>
+                <div class="swiper-slide single-image-container" style="background-image: url('/assets/images/Cheese-Selection.jpeg');"></div>
                 <div class="description">
                   <h4 class="name">Cheese Plate</h4>
                   <p>
                     Cheese + Wine + Miranda = A perfect evening talk.
                   </p>
                 </div>
-                <img class="arrow" src="./assets/Arrow-Right.png" alt="arrow"/>
+                <img class="arrow" src="/assets/images/Arrow-Right.png" alt="arrow"/>
               </div>
             </div>
           </div>
@@ -576,16 +576,16 @@
     <section class="carousel">
       <div class="swiper swiper--auto">
         <div class="swiper-wrapper">
-          <div class="single-image-container swiper-slide" style="background-image: url('/assets/Woman-At-Room.jpeg');"></div>
-          <div class="single-image-container swiper-slide" style="background-image: url('/assets/Hotel-Reception.jpeg');"></div>
-          <div class="single-image-container swiper-slide" style="background-image: url('/assets/HotelRoom4.jpeg');"></div>
+          <div class="single-image-container swiper-slide" style="background-image: url('/assets/images/Woman-At-Room.jpeg');"></div>
+          <div class="single-image-container swiper-slide" style="background-image: url('/assets/images/Hotel-Reception.jpeg');"></div>
+          <div class="single-image-container swiper-slide" style="background-image: url('/assets/images/HotelRoom4.jpeg');"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
     <section class="facts">
       <div class="facts__fact">
-        <img src="assets/Rocket.svg"/>
+        <img src="assets/images/Rocket.svg"/>
         <div class="number-container">
           <p class="number">84k</p>
           <p class="plus">+</p>
@@ -593,7 +593,7 @@
         <p class="text">Projects are Completed</p>
       </div>
       <div class="facts__fact">
-        <img src="assets/Family.svg"/>
+        <img src="assets/images/Family.svg"/>
         <div class="number-container">
           <p class="number">10M</p>
           <p class="plus">+</p>
@@ -601,7 +601,7 @@
         <p class="text">Worldwide Active Backers</p>
       </div>
       <div class="facts__fact">
-        <img src="assets/Investment.svg"/>
+        <img src="assets/images/Investment.svg"/>
         <div class="number-container">
           <p class="number">02k</p>
           <p class="plus">+</p>
@@ -609,7 +609,7 @@
         <p class="text">Categories Served</p>
       </div>
       <div class="facts__fact">
-        <img src="assets/Book.svg"/>
+        <img src="assets/images/Book.svg"/>
         <div class="number-container">
           <p class="number">100M</p>
           <p class="plus">+</p>

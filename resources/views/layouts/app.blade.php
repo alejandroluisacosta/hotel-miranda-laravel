@@ -38,20 +38,20 @@
             </div>
             <a href="/"><img class="hotel-name" src="/assets/images/HotelName.svg" description="Hotel Name"></a>
             <ul class="desktop-nav">
-            <a href="/about.html"><li class="nav-link">About Us</li></a>
-            <a href="/rooms.html"><li class="nav-link">Rooms</li></a>
-            <a href="/offers.html"><li class="nav-link">Offers</li></a>
-            <a href="/contact.html"><li class="nav-link">Contact</li></a>
+            <a href="/about"><li class="nav-link">About Us</li></a>
+            <a href="/rooms"><li class="nav-link">Rooms</li></a>
+            <a href="/offers"><li class="nav-link">Offers</li></a>
+            <a href="/contact"><li class="nav-link">Contact</li></a>
             </ul>
             <img class="icon icon--profile" src="/assets/images/User.svg"/>
             <img class="icon icon--search" src="/assets/images/Search.svg"/>
         </header>
         <nav class="mobile-nav">
             <ul>
-            <a href="/about.html"><li class="nav-link">About Us</li></a>
-            <a href="/rooms.html"><li class="nav-link">Rooms</li></a>
-            <a href="/offers.html"><li class="nav-link">Offers</li></a>
-            <a href="/contact.html"><li class="nav-link">Contact</li></a>
+            <a href="/about"><li class="nav-link">About Us</li></a>
+            <a href="/rooms"><li class="nav-link">Rooms</li></a>
+            <a href="/offers"><li class="nav-link">Offers</li></a>
+            <a href="/contact"><li class="nav-link">Contact</li></a>
             </ul>
         </nav>
     </div>
@@ -75,7 +75,7 @@
                     <img class="icon" src="/assets/images/Facebook.svg"/>
                 </div>
                 <div class="icon-container icon-container--twitter">
-                    <img class="icon" src="./assets/images/Twitter.svg"/>
+                    <img class="icon" src="/assets/images/Twitter.svg"/>
                 </div>
                 <div class="icon-container">
                     <img class="icon" src="/assets/images/Behance.svg"/>
