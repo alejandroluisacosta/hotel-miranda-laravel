@@ -15,7 +15,7 @@
     <section class="info">
         <div class="info__container">
             <p class="number number--1">01</p>
-            <img src="./assets/Hotel-Address.svg"/>
+            <img src="/assets/images/Hotel-Address.svg"/>
             <div class="text-container">
                 <p class="title">
                     Hotel Address
@@ -25,7 +25,7 @@
         </div>
         <div class="info__container">
             <p class="number number--2">02</p>
-            <img src="./assets/Phone-Number.svg"/>
+            <img src="/assets/images/Phone-Number.svg"/>
             <div class="text-container">
                 <p class="title">
                     Phone Number
@@ -35,7 +35,7 @@
         </div>
         <div class="info__container">
             <p class="number number--3">03</p>
-            <img src="./assets/Hotel-Email.svg"/>
+            <img src="/assets/images/Hotel-Email.svg"/>
             <div class="text-container">
                 <p class="title">
                     Email
@@ -44,31 +44,31 @@
             </div>
         </div>
     </section>
-    <div class="single-image-container single-image-container--contact contact-image-container" style="background-image: url('/assets/Hotel-At-Lake.jpeg');"></div>
+    <div class="single-image-container single-image-container--contact contact-image-container" style="background-image: url('/assets/images/Hotel-At-Lake.jpeg');"></div>
     </div>
     <form class="contact-form">
         <div class="row-of-two">
             <div class="input-container">
-                <img class="icon" src="./assets/Contact-User.svg"/>
+                <img class="icon" src="/assets/images/Contact-User.svg"/>
                 <input type="text" placeholder="Your full name"/>
             </div>
             <div class="input-container">
-                <img class="icon" src="./assets/Contact-Phone.svg"/>
+                <img class="icon" src="/assets/images/Contact-Phone.svg"/>
                 <input type="text" placeholder="Add your phone number"/>
             </div>
         </div>
         <div class="row-of-two">
             <div class="input-container">
-                <img class="icon" src="./assets/Contact-Email.svg"/>
+                <img class="icon" src="/assets/images/Contact-Email.svg"/>
                 <input type="text" placeholder="Enter email address"/>
             </div>
             <div class="input-container">
-                <img class="icon" src="./assets/Contact-Subject.svg"/>
+                <img class="icon" src="/assets/images/Contact-Subject.svg"/>
                 <input type="text" placeholder="Enter subject"/>
             </div>
         </div>
         <div class="input-container input-container--text-area">
-            <img class="icon" src="./assets/Contact-Pencil.svg"/>
+            <img class="icon" src="/assets/images/Contact-Pencil.svg"/>
             <textarea type="text-area" placeholder="Enter message"></textarea>
         </div>
         <button type="submit">SEND</button>
