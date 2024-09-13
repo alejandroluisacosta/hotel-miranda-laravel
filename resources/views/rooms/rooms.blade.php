@@ -39,15 +39,15 @@
             </article>
         </article>
         <article class="room-list__room" onclick="window.location.href='room-details.html'">
-            <img src="../assets/HotelRoom2.jpeg"/>
+            <img src="/assets/images/HotelRoom2.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="./assets/Bed.svg">
-                <img class="icon" src="./assets/Wifi.svg">
-                <img class="icon" src="./assets/Car.svg">
-                <img class="icon" src="./assets/Snow.svg">
-                <img class="icon" src="./assets/Gym.svg">
-                <img class="icon" src="./assets/Cigar.svg">
-                <img class="icon" src="./assets/Drink.svg">
+                <img class="icon" src="/assets/images/Bed.svg">
+                <img class="icon" src="/assets/images/Wifi.svg">
+                <img class="icon" src="/assets/images/Car.svg">
+                <img class="icon" src="/assets/images/Snow.svg">
+                <img class="icon" src="/assets/images/Gym.svg">
+                <img class="icon" src="/assets/images/Cigar.svg">
+                <img class="icon" src="/assets/images/Drink.svg">
             </article> 
             <article class="room-description-card room-description-card--rooms-page">
                 <h2 class="title">Romantic Duplex Room</h2>
@@ -61,15 +61,15 @@
             </article>
         </article>
         <article class="room-list__room" onclick="window.location.href='room-details.html'">
-            <img src="../assets/HotelRoom3.jpeg"/>
+            <img src="/assets/images/HotelRoom3.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="./assets/Bed.svg">
-                <img class="icon" src="./assets/Wifi.svg">
-                <img class="icon" src="./assets/Car.svg">
-                <img class="icon" src="./assets/Snow.svg">
-                <img class="icon" src="./assets/Gym.svg">
-                <img class="icon" src="./assets/Cigar.svg">
-                <img class="icon" src="./assets/Drink.svg">
+                <img class="icon" src="/assets/images/Bed.svg">
+                <img class="icon" src="/assets/images/Wifi.svg">
+                <img class="icon" src="/assets/images/Car.svg">
+                <img class="icon" src="/assets/images/Snow.svg">
+                <img class="icon" src="/assets/images/Gym.svg">
+                <img class="icon" src="/assets/images/Cigar.svg">
+                <img class="icon" src="/assets/images/Drink.svg">
             </article> 
             <article class="room-description-card room-description-card--rooms-page">
                 <h2 class="title">Luxury Honeymoon Room</h2>
@@ -83,15 +83,15 @@
             </article>
         </article>
         <article class="room-list__room" onclick="window.location.href='room-details.html'">
-            <img src="../assets/Hotel-Room5.jpeg"/>
+            <img src="/assets/images/Hotel-Room5.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="./assets/Bed.svg">
-                <img class="icon" src="./assets/Wifi.svg">
-                <img class="icon" src="./assets/Car.svg">
-                <img class="icon" src="./assets/Snow.svg">
-                <img class="icon" src="./assets/Gym.svg">
-                <img class="icon" src="./assets/Cigar.svg">
-                <img class="icon" src="./assets/Drink.svg">
+                <img class="icon" src="/assets/images/Bed.svg">
+                <img class="icon" src="/assets/images/Wifi.svg">
+                <img class="icon" src="/assets/images/Car.svg">
+                <img class="icon" src="/assets/images/Snow.svg">
+                <img class="icon" src="/assets/images/Gym.svg">
+                <img class="icon" src="/assets/images/Cigar.svg">
+                <img class="icon" src="/assets/images/Drink.svg">
             </article> 
             <article class="room-description-card room-description-card--rooms-page">
                 <h2 class="title">Family Room</h2>
@@ -105,15 +105,15 @@
             </article>
         </article>
         <article class="room-list__room" onclick="window.location.href='room-details.html'">
-            <img src="../assets/Hotel-Room6.jpeg"/>
+            <img src="/assets/images/Hotel-Room6.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="./assets/Bed.svg">
-                <img class="icon" src="./assets/Wifi.svg">
-                <img class="icon" src="./assets/Car.svg">
-                <img class="icon" src="./assets/Snow.svg">
-                <img class="icon" src="./assets/Gym.svg">
-                <img class="icon" src="./assets/Cigar.svg">
-                <img class="icon" src="./assets/Drink.svg">
+                <img class="icon" src="/assets/images/Bed.svg">
+                <img class="icon" src="/assets/images/Wifi.svg">
+                <img class="icon" src="/assets/images/Car.svg">
+                <img class="icon" src="/assets/images/Snow.svg">
+                <img class="icon" src="/assets/images/Gym.svg">
+                <img class="icon" src="/assets/images/Cigar.svg">
+                <img class="icon" src="/assets/images/Drink.svg">
             </article> 
             <article class="room-description-card room-description-card--rooms-page">
                 <h2 class="title">Superb Modern Suite</h2>
@@ -127,15 +127,15 @@
             </article>
         </article>
         <article class="room-list__room" onclick="window.location.href='room-details.html'">
-            <img src="../assets/Hotel-Room7.jpeg"/>
+            <img src="/assets/images/Hotel-Room7.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="./assets/Bed.svg">
-                <img class="icon" src="./assets/Wifi.svg">
-                <img class="icon" src="./assets/Car.svg">
-                <img class="icon" src="./assets/Snow.svg">
-                <img class="icon" src="./assets/Gym.svg">
-                <img class="icon" src="./assets/Cigar.svg">
-                <img class="icon" src="./assets/Drink.svg">
+                <img class="icon" src="/assets/images/Bed.svg">
+                <img class="icon" src="/assets/images/Wifi.svg">
+                <img class="icon" src="/assets/images/Car.svg">
+                <img class="icon" src="/assets/images/Snow.svg">
+                <img class="icon" src="/assets/images/Gym.svg">
+                <img class="icon" src="/assets/images/Cigar.svg">
+                <img class="icon" src="/assets/images/Drink.svg">
             </article> 
             <article class="room-description-card room-description-card--rooms-page">
                 <h2 class="title">Max Lux Suite</h2>
