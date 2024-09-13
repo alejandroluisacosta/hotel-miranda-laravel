@@ -13,7 +13,7 @@
     </section>
     <article class="room-offer">
         <div class="image-container">
-            <img class="image" src="/assets/HotelRoom3.jpeg"/>
+            <img class="image" src="/assets/images/HotelRoom3.jpeg"/>
             <div class="prices-container prices-container--mobile">
                 <div class="old-price-container">
                     <p class="old-price">$500</p>
@@ -53,43 +53,43 @@
                 <div class="amenities">
                     <div class="amenities-container">
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Air-Conditioner.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Air-Conditioner.svg"/>
                             <p class="name">Air conditioner</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Wifi.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Wifi.svg"/>
                             <p class="name">High speed WiFi</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Breakfast.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Breakfast.svg"/>
                             <p class="name">Breakfast</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Kitchen.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Kitchen.svg"/>
                             <p class="name">Kitchen</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Cleaning.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Cleaning.svg"/>
                             <p class="name">Cleaning</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Shower.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Shower.svg"/>
                             <p class="name">Shower</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Grocery.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Grocery.svg"/>
                             <p class="name">Grocery</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Bed.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Bed.svg"/>
                             <p class="name">Single bed</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Shop.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Shop.svg"/>
                             <p class="name">Shop near</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Towel.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Towel.svg"/>
                             <p class="name">Towels</p>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
     </article>
     <article class="room-offer">
         <div class="image-container">
-            <img class="image" src="/assets/HotelRoom2.jpeg"/>
+            <img class="image" src="/assets/images/HotelRoom2.jpeg"/>
             <div class="prices-container prices-container--mobile">
                 <div class="old-price-container">
                     <p class="old-price">$550</p>
@@ -140,43 +140,43 @@
                 <div class="amenities">
                     <div class="amenities-container">
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Air-Conditioner.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Air-Conditioner.svg"/>
                             <p class="name">Air conditioner</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Wifi.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Wifi.svg"/>
                             <p class="name">High speed WiFi</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Breakfast.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Breakfast.svg"/>
                             <p class="name">Breakfast</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Kitchen.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Kitchen.svg"/>
                             <p class="name">Kitchen</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Cleaning.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Cleaning.svg"/>
                             <p class="name">Cleaning</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Shower.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Shower.svg"/>
                             <p class="name">Shower</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Grocery.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Grocery.svg"/>
                             <p class="name">Grocery</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Bed.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Bed.svg"/>
                             <p class="name">Single bed</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Shop.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Shop.svg"/>
                             <p class="name">Shop near</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Towel.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Towel.svg"/>
                             <p class="name">Towels</p>
                         </div>
                     </div>
@@ -187,7 +187,7 @@
     </article>
     <article class="room-offer">
         <div class="image-container">
-            <img class="image" src="/assets/HotelRoom.jpeg"/>
+            <img class="image" src="/assets/images/HotelRoom.jpeg"/>
             <div class="prices-container prices-container--mobile">
                 <div class="old-price-container">
                     <p class="old-price">$350</p>
@@ -227,43 +227,43 @@
                 <div class="amenities">
                     <div class="amenities-container">
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Air-Conditioner.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Air-Conditioner.svg"/>
                             <p class="name">Air conditioner</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Wifi.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Wifi.svg"/>
                             <p class="name">High speed WiFi</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Breakfast.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Breakfast.svg"/>
                             <p class="name">Breakfast</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Kitchen.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Kitchen.svg"/>
                             <p class="name">Kitchen</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Cleaning.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Cleaning.svg"/>
                             <p class="name">Cleaning</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Shower.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Shower.svg"/>
                             <p class="name">Shower</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Grocery.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Grocery.svg"/>
                             <p class="name">Grocery</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Bed.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Bed.svg"/>
                             <p class="name">Single bed</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Shop.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Shop.svg"/>
                             <p class="name">Shop near</p>
                         </div>
                         <div class="amenity">
-                            <img class="icon" src="./assets/Amenities-Towel.svg"/>
+                            <img class="icon" src="/assets/images/Amenities-Towel.svg"/>
                             <p class="name">Towels</p>
                         </div>
                     </div>
@@ -278,15 +278,15 @@
         <div class="swiper swiper--popular-rooms">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="image" src="../assets/HotelRoom.jpeg"/>
+                <img class="image" src="/assets/images/HotelRoom.jpeg"/>
                 <article class="icon-bar icon-bar--rooms-page">
-                    <img class="icon" src="./assets/Bed.svg">
-                    <img class="icon" src="./assets/Wifi.svg">
-                    <img class="icon" src="./assets/Car.svg">
-                    <img class="icon" src="./assets/Snow.svg">
-                    <img class="icon" src="./assets/Gym.svg">
-                    <img class="icon" src="./assets/Cigar.svg">
-                    <img class="icon" src="./assets/Drink.svg">
+                    <img class="icon" src="/assets/images/Bed.svg">
+                    <img class="icon" src="/assets/images/Wifi.svg">
+                    <img class="icon" src="/assets/images/Car.svg">
+                    <img class="icon" src="/assets/images/Snow.svg">
+                    <img class="icon" src="/assets/images/Gym.svg">
+                    <img class="icon" src="/assets/images/Cigar.svg">
+                    <img class="icon" src="/assets/images/Drink.svg">
                 </article> 
                 <article class="room-description-card room-description-card--rooms-page">
                     <h2 class="title">Minimal Duplex Room</h2>
@@ -300,15 +300,15 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <img class="image" src="../assets/HotelRoom2.jpeg"/>
+                <img class="image" src="/assets/images/HotelRoom2.jpeg"/>
                 <article class="icon-bar icon-bar--rooms-page">
-                    <img class="icon" src="./assets/Bed.svg">
-                    <img class="icon" src="./assets/Wifi.svg">
-                    <img class="icon" src="./assets/Car.svg">
-                    <img class="icon" src="./assets/Snow.svg">
-                    <img class="icon" src="./assets/Gym.svg">
-                    <img class="icon" src="./assets/Cigar.svg">
-                    <img class="icon" src="./assets/Drink.svg">
+                    <img class="icon" src="/assets/images/Bed.svg">
+                    <img class="icon" src="/assets/images/Wifi.svg">
+                    <img class="icon" src="/assets/images/Car.svg">
+                    <img class="icon" src="/assets/images/Snow.svg">
+                    <img class="icon" src="/assets/images/Gym.svg">
+                    <img class="icon" src="/assets/images/Cigar.svg">
+                    <img class="icon" src="/assets/images/Drink.svg">
                 </article> 
                 <article class="room-description-card room-description-card--rooms-page">
                     <h2 class="title">Romantic Duplex Room</h2>
@@ -322,15 +322,15 @@
                 </article>
               </div>
               <div class="swiper-slide">
-                <img class="image" src="../assets/HotelRoom3.jpeg"/>
+                <img class="image" src="/assets/images/HotelRoom3.jpeg"/>
                 <article class="icon-bar icon-bar--rooms-page">
-                    <img class="icon" src="./assets/Bed.svg">
-                    <img class="icon" src="./assets/Wifi.svg">
-                    <img class="icon" src="./assets/Car.svg">
-                    <img class="icon" src="./assets/Snow.svg">
-                    <img class="icon" src="./assets/Gym.svg">
-                    <img class="icon" src="./assets/Cigar.svg">
-                    <img class="icon" src="./assets/Drink.svg">
+                    <img class="icon" src="/assets/images/Bed.svg">
+                    <img class="icon" src="/assets/images/Wifi.svg">
+                    <img class="icon" src="/assets/images/Car.svg">
+                    <img class="icon" src="/assets/images/Snow.svg">
+                    <img class="icon" src="/assets/images/Gym.svg">
+                    <img class="icon" src="/assets/images/Cigar.svg">
+                    <img class="icon" src="/assets/images/Drink.svg">
                 </article> 
                 <article class="room-description-card room-description-card--rooms-page">
                     <h2 class="title">Luxury Honeymoon Room</h2>
