@@ -8,10 +8,6 @@ use App\Http\Controllers\OfferController;
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/about', function () {
     return view('about');
 });
@@ -27,7 +23,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('activities', ActivityController::class);
 });
 
-Route::get('/home', [HomeController::class, 'index'])->name('home.index');
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/offers', [OfferController::class, 'index'])->name('offers.index');
 Route::get('/rooms', [RoomController::class, 'index'])->name('rooms.index');
 Route::get('/rooms/{id}', [RoomController::class, 'show'])->name('rooms.show');

@@ -16,28 +16,30 @@
         </div>
     </section>
     <section class="room-list">
-        <article class="room-list__room" onclick="window.location.href='room-details'">
-            <img src="/assets/images/HotelRoom.jpeg"/>
-            <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="/assets/images/Bed.svg">
-                <img class="icon" src="/assets/images/Wifi.svg">
-                <img class="icon" src="/assets/images/Car.svg">
-                <img class="icon" src="/assets/images/Snow.svg">
-                <img class="icon" src="/assets/images/Gym.svg">
-                <img class="icon" src="/assets/images/Cigar.svg">
-                <img class="icon" src="/assets/images/Drink.svg">
-            </article> 
-            <article class="room-description-card room-description-card--rooms-page">
-                <h2 class="title">Minimal Duplex Room</h2>
-                <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipi<br>sicing elit, sed do eiusmod tempor.
-                </p>
-                <div class="booking-container">
-                <p class="price">$345/Night</p>
-                <p class="booking">Book now</p>
-                </div>
+        <?php foreach ($rooms->slice(0, 3) as $room): ?>
+            <article class="room-list__room" onclick="window.location.href='rooms/<?= $room->id ?>'">
+                <img src="<?= $room->images()->first()->url; ?>"/>
+                <article class="icon-bar icon-bar--rooms-page">
+                    <img class="icon" src="/assets/images/Bed.svg">
+                    <img class="icon" src="/assets/images/Wifi.svg">
+                    <img class="icon" src="/assets/images/Car.svg">
+                    <img class="icon" src="/assets/images/Snow.svg">
+                    <img class="icon" src="/assets/images/Gym.svg">
+                    <img class="icon" src="/assets/images/Cigar.svg">
+                    <img class="icon" src="/assets/images/Drink.svg">
+                </article> 
+                <article class="room-description-card room-description-card--rooms-page">
+                    <h2 class="title">{{ $room->type->typeName; }}</h2>
+                    <p class="description">
+                    <?= $room->description ?>
+                    </p>
+                    <div class="booking-container">
+                    <p class="price">$<?= $room->rate ?>/Night</p>
+                    <p class="booking">Book now</p>
+                    </div>
+                </article>
             </article>
-        </article>
+        <?php endforeach; ?>
         <article class="room-list__room" onclick="window.location.href='room-details'">
             <img src="/assets/images/HotelRoom2.jpeg"/>
             <article class="icon-bar icon-bar--rooms-page">

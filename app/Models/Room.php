@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use App\Models\Booking;
@@ -25,6 +26,11 @@ class Room extends Model
     public function amenities(): BelongsToMany
     {
         return $this->belongsToMany(Amenity::class, 'rooms_amenities', 'roomId', 'amenityId');
+    }
+
+    public function type(): BelongsTo
+    {
+        return $this->belongsTo(RoomType::class, 'roomType');
     }
 
     public function images(): HasManyThrough
