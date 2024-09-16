@@ -15,8 +15,8 @@
         <section class="room-basic-info">
             <div class="info-container">
                 <div class="name-container">
-                    <p class="section-name">DOUBLE BED</p>
-                    <p class="section-title section-title--room">Luxury Double Bed</p>
+                    <p class="section-name">{{ strtoupper($room->type->typeName) }}</p>
+                    <p class="section-title section-title--room">{{ $room->type->typeName }} {{ $room->name }}</p>
                 </div>
                 <div class="price-container">
                     <p class="price">$345</p>
@@ -137,10 +137,10 @@
         <hr>
         <div class="swiper swiper--related-rooms">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="/assets/images/HotelRoom2.jpeg"/>
-                    <article class="room-description-card room-description-card--rooms-page">
-                        <article class="icon-bar">
+                <?php foreach ($rooms->slice(0, 2) as $relatedRoom): ?>
+                    <div class="swiper-slide">
+                        <img src="<?= $relatedRoom->images()->first()->url; ?>"/>
+                        <article class="icon-bar icon-bar--rooms-page">
                             <img class="icon" src="/assets/images/Bed.svg">
                             <img class="icon" src="/assets/images/Wifi.svg">
                             <img class="icon" src="/assets/images/Car.svg">
@@ -148,39 +148,19 @@
                             <img class="icon" src="/assets/images/Gym.svg">
                             <img class="icon" src="/assets/images/Cigar.svg">
                             <img class="icon" src="/assets/images/Drink.svg">
-                          </article> 
-                        <h2 class="title">Romantic Double Room</h2>
-                      <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-                      </p>
-                      <div class="booking-container">
-                        <p class="price">$445/Night</p>
-                        <p class="booking">Book now</p>
-                      </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <img src="/assets/images/HotelRoom3.jpeg"/>
-                    <article class="room-description-card room-description-card--rooms-page">
-                        <article class="icon-bar">
-                            <img class="icon" src="/assets/images/Bed.svg">
-                            <img class="icon" src="/assets/images/Wifi.svg">
-                            <img class="icon" src="/assets/images/Car.svg">
-                            <img class="icon" src="/assets/images/Snow.svg">
-                            <img class="icon" src="/assets/images/Gym.svg">
-                            <img class="icon" src="/assets/images/Cigar.svg">
-                            <img class="icon" src="/assets/images/Drink.svg">
-                          </article> 
-                        <h2 class="title">Luxury Honeymoon Room</h2>
-                      <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-                      </p>
-                      <div class="booking-container">
-                        <p class="price">$500/Night</p>
-                        <p class="booking">Book now</p>
-                      </div>
-                    </article>
-                </div>
+                        </article> 
+                        <article class="room-description-card room-description-card--rooms-page">
+                            <h2 class="title">{{ $relatedRoom->type->typeName; }}</h2>
+                            <p class="description">
+                            <?= $room->description ?>
+                            </p>
+                            <div class="booking-container">
+                            <p class="price">$<?= $relatedRoom->rate ?>/Night</p>
+                            <p class="booking">Book now</p>
+                            </div>
+                        </article>
+                    </div>
+                <?php endforeach; ?>
             </div>
             <div class="swiper-button-prev" id="swiper-button-prev--rooms"></div>
             <div class="swiper-button-next" id="swiper-button-next--rooms"></div>
