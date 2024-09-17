@@ -28,6 +28,6 @@ Route::get('/offers', [OfferController::class, 'index'])->name('offers.index');
 Route::get('/rooms', [RoomController::class, 'index'])->name('rooms.index');
 Route::get('/rooms/{id}', [RoomController::class, 'show'])->name('rooms.show');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
-Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 require __DIR__.'/auth.php';

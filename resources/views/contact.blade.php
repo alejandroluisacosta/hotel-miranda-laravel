@@ -46,30 +46,31 @@
     </section>
     <div class="single-image-container single-image-container--contact contact-image-container" style="background-image: url('/assets/images/Hotel-At-Lake.jpeg');"></div>
     </div>
-    <form class="contact-form">
+    <form class="contact-form" method="POST" action="{{ route('contact.store') }}">
+        @csrf
         <div class="row-of-two">
             <div class="input-container">
                 <img class="icon" src="/assets/images/Contact-User.svg"/>
-                <input type="text" placeholder="Your full name"/>
+                <input type="text" name="name" placeholder="Your full name"/>
             </div>
             <div class="input-container">
                 <img class="icon" src="/assets/images/Contact-Phone.svg"/>
-                <input type="text" placeholder="Add your phone number"/>
+                <input type="text" name="phone" placeholder="Add your phone number"/>
             </div>
         </div>
         <div class="row-of-two">
             <div class="input-container">
                 <img class="icon" src="/assets/images/Contact-Email.svg"/>
-                <input type="text" placeholder="Enter email address"/>
+                <input type="text" name="email" placeholder="Enter email address"/>
             </div>
             <div class="input-container">
                 <img class="icon" src="/assets/images/Contact-Subject.svg"/>
-                <input type="text" placeholder="Enter subject"/>
+                <input type="text" name="subject" placeholder="Enter subject"/>
             </div>
         </div>
         <div class="input-container input-container--text-area">
             <img class="icon" src="/assets/images/Contact-Pencil.svg"/>
-            <textarea type="text-area" placeholder="Enter message"></textarea>
+            <textarea type="text-area" name="text" placeholder="Enter message"></textarea>
         </div>
         <button type="submit">SEND</button>
     </form>

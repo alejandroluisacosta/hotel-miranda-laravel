@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
@@ -16,7 +17,7 @@ class ContactController extends Controller
             'phone' => ['string'],
             'email' => ['required', 'string'],
             'subject' => ['required', 'string'],
-            'text' => ['required', 'text'],
+            'text' => ['required', 'string'],
         ]);
 
         $comment = Contact::create((array_merge($validated, [
