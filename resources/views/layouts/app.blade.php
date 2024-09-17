@@ -14,6 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
         <style>
           .material-symbols-outlined {
             font-variation-settings:
@@ -141,5 +142,20 @@
     <script src="/assets/js/nav.js"></script>
     <script src="/assets/js/header.js"></script>
     <script src="/assets/js/swiper.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    @if (session('status'))
+        <script>
+            Toastify({
+                text: "{{ session('status') }}",
+                duration: 3000,
+                position: "center",
+                stopOnFocus: true,
+                style: {
+                    background: "linear-gradient(to right, #E9E6E0, #BDAC8D)",
+                    color: "#454340",
+                }
+            }).showToast();
+        </script>
+    @endif
 </body>
 </html>

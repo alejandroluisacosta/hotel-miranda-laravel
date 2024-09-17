@@ -24,6 +24,6 @@ class ContactController extends Controller
             'read' => false,
         ])));
 
-        return redirect('/contact');
+        return redirect('/contact')->with('status', 'Thank you for your message! We’ll get back to you soon.');
     }
 }
