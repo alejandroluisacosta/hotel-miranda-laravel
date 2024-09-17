@@ -16,9 +16,9 @@
         </div>
     </section>
     <section class="room-list">
-        <?php foreach ($rooms->slice(0, 3) as $room): ?>
+        <?php foreach ($rooms->slice(0,4) as $room): ?>
             <article class="room-list__room" onclick="window.location.href='rooms/<?= $room->id ?>'">
-                <img src="<?= $room->images()->first()->url; ?>"/>
+                <img src="<?= $room->images->first()->url; ?>"/>
                 <article class="icon-bar icon-bar--rooms-page">
                     <img class="icon" src="/assets/images/Bed.svg">
                     <img class="icon" src="/assets/images/Wifi.svg">
@@ -40,116 +40,6 @@
                 </article>
             </article>
         <?php endforeach; ?>
-        <article class="room-list__room" onclick="window.location.href='room-details'">
-            <img src="/assets/images/HotelRoom2.jpeg"/>
-            <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="/assets/images/Bed.svg">
-                <img class="icon" src="/assets/images/Wifi.svg">
-                <img class="icon" src="/assets/images/Car.svg">
-                <img class="icon" src="/assets/images/Snow.svg">
-                <img class="icon" src="/assets/images/Gym.svg">
-                <img class="icon" src="/assets/images/Cigar.svg">
-                <img class="icon" src="/assets/images/Drink.svg">
-            </article> 
-            <article class="room-description-card room-description-card--rooms-page">
-                <h2 class="title">Romantic Duplex Room</h2>
-                <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipi<br>sicing elit, sed do eiusmod tempor.
-                </p>
-                <div class="booking-container">
-                <p class="price">$445/Night</p>
-                <p class="booking">Book now</p>
-                </div>
-            </article>
-        </article>
-        <article class="room-list__room" onclick="window.location.href='room-details'">
-            <img src="/assets/images/HotelRoom3.jpeg"/>
-            <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="/assets/images/Bed.svg">
-                <img class="icon" src="/assets/images/Wifi.svg">
-                <img class="icon" src="/assets/images/Car.svg">
-                <img class="icon" src="/assets/images/Snow.svg">
-                <img class="icon" src="/assets/images/Gym.svg">
-                <img class="icon" src="/assets/images/Cigar.svg">
-                <img class="icon" src="/assets/images/Drink.svg">
-            </article> 
-            <article class="room-description-card room-description-card--rooms-page">
-                <h2 class="title">Luxury Honeymoon Room</h2>
-                <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipi<br>sicing elit, sed do eiusmod tempor.
-                </p>
-                <div class="booking-container">
-                <p class="price">$500/Night</p>
-                <p class="booking">Book now</p>
-                </div>
-            </article>
-        </article>
-        <article class="room-list__room" onclick="window.location.href='room-details'">
-            <img src="/assets/images/Hotel-Room5.jpeg"/>
-            <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="/assets/images/Bed.svg">
-                <img class="icon" src="/assets/images/Wifi.svg">
-                <img class="icon" src="/assets/images/Car.svg">
-                <img class="icon" src="/assets/images/Snow.svg">
-                <img class="icon" src="/assets/images/Gym.svg">
-                <img class="icon" src="/assets/images/Cigar.svg">
-                <img class="icon" src="/assets/images/Drink.svg">
-            </article> 
-            <article class="room-description-card room-description-card--rooms-page">
-                <h2 class="title">Family Room</h2>
-                <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipi<br>sicing elit, sed do eiusmod tempor.
-                </p>
-                <div class="booking-container">
-                <p class="price">$600/Night</p>
-                <p class="booking">Book now</p>
-                </div>
-            </article>
-        </article>
-        <article class="room-list__room" onclick="window.location.href='room-details'">
-            <img src="/assets/images/Hotel-Room6.jpeg"/>
-            <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="/assets/images/Bed.svg">
-                <img class="icon" src="/assets/images/Wifi.svg">
-                <img class="icon" src="/assets/images/Car.svg">
-                <img class="icon" src="/assets/images/Snow.svg">
-                <img class="icon" src="/assets/images/Gym.svg">
-                <img class="icon" src="/assets/images/Cigar.svg">
-                <img class="icon" src="/assets/images/Drink.svg">
-            </article> 
-            <article class="room-description-card room-description-card--rooms-page">
-                <h2 class="title">Superb Modern Suite</h2>
-                <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipi<br>sicing elit, sed do eiusmod tempor.
-                </p>
-                <div class="booking-container">
-                    <p class="price">$850/Night</p>
-                    <p class="booking">Book now</p>
-                </div>
-            </article>
-        </article>
-        <article class="room-list__room" onclick="window.location.href='room-details'">
-            <img src="/assets/images/Hotel-Room7.jpeg"/>
-            <article class="icon-bar icon-bar--rooms-page">
-                <img class="icon" src="/assets/images/Bed.svg">
-                <img class="icon" src="/assets/images/Wifi.svg">
-                <img class="icon" src="/assets/images/Car.svg">
-                <img class="icon" src="/assets/images/Snow.svg">
-                <img class="icon" src="/assets/images/Gym.svg">
-                <img class="icon" src="/assets/images/Cigar.svg">
-                <img class="icon" src="/assets/images/Drink.svg">
-            </article> 
-            <article class="room-description-card room-description-card--rooms-page">
-                <h2 class="title">Max Lux Suite</h2>
-                <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipi<br>sicing elit, sed do eiusmod tempor.
-                </p>
-                <div class="booking-container">
-                <p class="price">$1250/Night</p>
-                <p class="booking">Book now</p>
-                </div>
-            </article>
-        </article>
     </section>
     <nav class="rooms-pagination">
     <ul class="pagination">

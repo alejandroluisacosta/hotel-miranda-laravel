@@ -33,15 +33,8 @@ class Room extends Model
         return $this->belongsTo(RoomType::class, 'roomType');
     }
 
-    public function images(): HasManyThrough
+    public function images(): BelongsToMany
     {
-        return $this->hasManyThrough(
-            Image::class,
-            RoomTypeImage::class,
-            'roomType',
-            'id',
-            'id',
-            'imageId'
-        );
+        return $this->belongsToMany(Image::class, 'room_type_images', 'roomType', 'imageId');
     }
 }
