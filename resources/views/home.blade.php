@@ -8,13 +8,13 @@
         <button class="button base__button--2" onclick="window.location.href='rooms'">SEE ROOMS</button>
       </div>
     </section>
-    <form class="availability">
+    <form method="GET" action="/rooms" class="availability">
       <div class="input-container">
         <label class="availability__label" for="arrival-date">Arrival Date</label>
         <span class="material-symbols-outlined">
           calendar_today
         </span>
-        <p class="availability__input">24th march 2020</p>
+        <input type="date" name="checkin" placeholder="Check-in date" class="availability__input"/>
         <hr>
       </div>
       <div class="input-container">
@@ -22,7 +22,7 @@
         <span class="material-symbols-outlined">
           calendar_today
         </span>
-        <p class="availability__input">30th march 2020</p>
+        <input type="date" name="checkout" placeholder="Check-out date" class="availability__input">30th march 2020</p>
         <hr>
       </div>
       <button class="availability__submit" type="submit">CHECK AVAILABILITY</button>

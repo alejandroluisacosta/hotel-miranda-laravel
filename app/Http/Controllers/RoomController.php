@@ -7,9 +7,20 @@ use App\Models\Room;
 
 class RoomController extends Controller
 {
-    public function index() {
-        $rooms = Room::with(['bookings', 'amenities', 'images'])->get();
-        return view('rooms.rooms', ['rooms' => $rooms]);
+    public function index(Request $request) 
+    {
+        $checkin = $request->query('checkin');
+        $checkout = $request->query('checkout');
+
+        if ($checkin && $checkout) {
+            $rooms = Room::available($checkin, $checkout)
+                     ->with(['bookings', 'amenities', 'images'])
+                     ->get();
+        }
+        else {
+            $rooms = Room::with(['bookings', 'amenities', 'images'])->get();
+        }
+        return view('rooms.index', ['rooms' => $rooms]);
     }
 
     public function show(string $id) {
