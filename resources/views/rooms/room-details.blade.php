@@ -19,11 +19,11 @@
                     <p class="section-title section-title--room">{{ $room->type->typeName }} {{ $room->name }}</p>
                 </div>
                 <div class="price-container">
-                    <p class="price">$345</p>
+                    <p class="price">${{ $room->rate }}</p>
                     <p class="divisor">/Night</p>
                 </div>
             </div>
-            <img src="/assets/images/HotelRoom2.jpeg"/>
+            <img src="{{ $room->type->images->first()->url }}"/>
             <p class="room-details-description room-details-description--desktop">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
             </p>
@@ -150,12 +150,12 @@
                             <img class="icon" src="/assets/images/Drink.svg">
                         </article> 
                         <article class="room-description-card room-description-card--rooms-page">
-                            <h2 class="title">{{ $relatedRoom->type->typeName; }}</h2>
+                            <h2 class="title">{{ $relatedRoom->type->typeName }} {{  $relatedRoom->name }}</h2>
                             <p class="description">
                             <?= $room->description ?>
                             </p>
                             <div class="booking-container">
-                            <p class="price">$<?= $relatedRoom->rate ?>/Night</p>
+                            <p class="price">${{ $relatedRoom->rate }}/Night</p>
                             <p class="booking">Book now</p>
                             </div>
                         </article>
