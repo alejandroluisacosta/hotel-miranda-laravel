@@ -22,7 +22,7 @@
         <span class="material-symbols-outlined">
           calendar_today
         </span>
-        <input type="date" name="checkout" placeholder="Check-out date" class="availability__input">30th march 2020</p>
+        <input type="date" name="checkout" placeholder="Check-out date" class="availability__input"/>
         <hr>
       </div>
       <button class="availability__submit" type="submit">CHECK AVAILABILITY</button>

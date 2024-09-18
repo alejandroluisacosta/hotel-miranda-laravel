@@ -26,9 +26,10 @@ class Room extends Model
 
     public static function available($checkin, $checkout)
     {
-        return self::whereHas('bookings', function (Builder $query) use ($checkin, $checkout) {
-            $query->where('checkOutDate', '<=', $checkin)
-                  ->where('checkInDate', '>=', $checkout);
+        return self::whereDoesntHave('bookings', function (Builder $query) use ($checkin, $checkout) {
+            $query->where('checkOutDate', '>=', $checkin)
+                  ->where('checkInDate', '<=', $checkout);
+                //   ->where('id', '<', 4);
         });
     }
 

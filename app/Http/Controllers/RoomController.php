@@ -13,9 +13,7 @@ class RoomController extends Controller
         $checkout = $request->query('checkout');
 
         if ($checkin && $checkout) {
-            $rooms = Room::available($checkin, $checkout)
-                     ->with(['bookings', 'amenities', 'images'])
-                     ->get();
+            $rooms = Room::available($checkin, $checkout)->get()->slice(0,3);
         }
         else {
             $rooms = Room::with(['bookings', 'amenities', 'images'])->get();
