@@ -18,9 +18,9 @@ class DatabaseSeeder extends Seeder
 
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 
-        DB::table('rooms')->truncate();
+        DB::table('rooms_amenities')->truncate();
 
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
-        $this->call(RoomSeeder::class);
+        $this->call(RoomAmenitySeeder::class);
     }
 }
