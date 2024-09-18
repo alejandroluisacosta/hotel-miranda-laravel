@@ -18,7 +18,7 @@
     <section class="room-list">
         <?php foreach ($rooms->slice(0,4) as $room): ?>
             <article class="room-list__room" onclick="window.location.href='rooms/<?= $room->id ?>'">
-                <img src="<?= $room->images->first()->url; ?>"/>
+                <img src="<?= $room->type->images->first()->url; ?>"/>
                 <article class="icon-bar icon-bar--rooms-page">
                     <img class="icon" src="/assets/images/Bed.svg">
                     <img class="icon" src="/assets/images/Wifi.svg">

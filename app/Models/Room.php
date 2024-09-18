@@ -29,7 +29,6 @@ class Room extends Model
         return self::whereDoesntHave('bookings', function (Builder $query) use ($checkin, $checkout) {
             $query->where('checkOutDate', '>=', $checkin)
                   ->where('checkInDate', '<=', $checkout);
-                //   ->where('id', '<', 4);
         });
     }
 

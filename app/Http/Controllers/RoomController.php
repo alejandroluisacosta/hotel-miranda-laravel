@@ -13,11 +13,12 @@ class RoomController extends Controller
         $checkout = $request->query('checkout');
 
         if ($checkin && $checkout) {
-            $rooms = Room::available($checkin, $checkout)->get()->slice(0,3);
+            $rooms = Room::available($checkin, $checkout)->get();
         }
         else {
             $rooms = Room::with(['bookings', 'amenities', 'images'])->get();
         }
+
         return view('rooms.index', ['rooms' => $rooms]);
     }
 
