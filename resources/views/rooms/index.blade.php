@@ -19,17 +19,13 @@
         @if (!count($rooms))
             <h2>No rooms available on the selected time period.</h2>
         @else
-        <?php foreach ($rooms->slice(0,10) as $room): ?>
+        @foreach ($rooms->slice(0,10) as $room)
             <article class="room-list__room" onclick="window.location.href='rooms/<?= $room->id ?>'">
                 <img src="<?= $room->type->images->first()->url; ?>"/>
                 <article class="icon-bar icon-bar--rooms-page">
-                    <img class="icon" src="/assets/images/Bed.svg">
-                    <img class="icon" src="/assets/images/Wifi.svg">
-                    <img class="icon" src="/assets/images/Car.svg">
-                    <img class="icon" src="/assets/images/Snow.svg">
-                    <img class="icon" src="/assets/images/Gym.svg">
-                    <img class="icon" src="/assets/images/Cigar.svg">
-                    <img class="icon" src="/assets/images/Drink.svg">
+                @foreach ($room->amenities as $amenity)
+                    <img class="icon" src="/assets/images/{{$amenity->amenity}}.svg">
+                @endforeach
                 </article> 
                 <article class="room-description-card room-description-card--rooms-page">
                     <h2 class="title">{{ $room->type->typeName; }} {{ $room->name }}</h2>
@@ -42,7 +38,7 @@
                     </div>
                 </article>
             </article>
-        <?php endforeach; ?>
+        @endforeach
         @endif
     </section>
     <nav class="rooms-pagination">
