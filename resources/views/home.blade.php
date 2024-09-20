@@ -202,126 +202,22 @@
       </div>
       <div class="swiper swiper--rooms--desktop">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" onclick="window.location.href='room-details'">
+          @foreach ($rooms->slice(0,6) as $room)
+          <div class="swiper-slide" onclick="window.location.href='rooms/{{ $room->id }}'">
             <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="/assets/images/Bed.svg">
-              <img class="icon" src="/assets/images/Wifi.svg">
-              <img class="icon" src="/assets/images/Car.svg">
-              <img class="icon" src="/assets/images/Snow.svg">
-              <img class="icon" src="/assets/images/Gym.svg">
-              <img class="icon" src="/assets/images/Cigar.svg">
-              <img class="icon" src="/assets/images/Drink.svg">
+                @foreach ($room->amenities as $amenity)
+                    <img class="icon" src="/assets/images/{{$amenity->amenity}}.svg">
+                @endforeach
             </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom.jpeg');"></div>
+            <div class="image single-image-container" style="background-image: url('{{ $room->type->images->first()->url }}');"></div>
             <article class="room-description-card room-description-card--home">
-              <h2 class="title">Minimal Duplex Room</h2>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="price">$345</p>
+              <h2 class="title">{{ $room->type->typeName }} {{ $room->name }}</h2>
+              <p class="description">{{ $room->description }}</p>
+              <p class="price">${{ $room->rate }}</p>
               <p class="divisor">/Night</p>
             </article>
           </div>
-          <div class="swiper-slide" onclick="window.location.href='room-details'">
-            <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="/assets/images/Bed.svg">
-              <img class="icon" src="/assets/images/Wifi.svg">
-              <img class="icon" src="/assets/images/Car.svg">
-              <img class="icon" src="/assets/images/Snow.svg">
-              <img class="icon" src="/assets/images/Gym.svg">
-              <img class="icon" src="/assets/images/Cigar.svg">
-              <img class="icon" src="/assets/images/Drink.svg">
-            </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom2.jpeg');"></div>
-            <article class="room-description-card room-description-card--home">
-              <h2 class="title">Romantic Duplex Room</h2>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="price">$445</p>
-              <p class="divisor">/Night</p>
-            </article>
-          </div>
-          <div class="swiper-slide" onclick="window.location.href='room-details'">
-            <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="/assets/images/Bed.svg">
-              <img class="icon" src="/assets/images/Wifi.svg">
-              <img class="icon" src="/assets/images/Car.svg">
-              <img class="icon" src="/assets/images/Snow.svg">
-              <img class="icon" src="/assets/images/Gym.svg">
-              <img class="icon" src="/assets/images/Cigar.svg">
-              <img class="icon" src="/assets/images/Drink.svg">
-            </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom3.jpeg');"></div>
-            <article class="room-description-card room-description-card--home">
-              <h2 class="title">Luxury Honeymoon Room</h2>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="price">$500</p>
-              <p class="divisor">/Night</p>
-            </article>
-          </div>
-          <div class="swiper-slide" onclick="window.location.href='room-details'">
-            <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="/assets/images/Bed.svg">
-              <img class="icon" src="/assets/images/Wifi.svg">
-              <img class="icon" src="/assets/images/Car.svg">
-              <img class="icon" src="/assets/images/Snow.svg">
-              <img class="icon" src="/assets/images/Gym.svg">
-              <img class="icon" src="/assets/images/Cigar.svg">
-              <img class="icon" src="/assets/images/Drink.svg">
-            </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom.jpeg');"></div>
-            <article class="room-description-card room-description-card--home">
-              <h2 class="title">Minimal Duplex Room</h2>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="price">$345</p>
-              <p class="divisor">/Night</p>
-            </article>
-          </div>
-          <div class="swiper-slide" onclick="window.location.href='room-details'">
-            <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="/assets/images/Bed.svg">
-              <img class="icon" src="/assets/images/Wifi.svg">
-              <img class="icon" src="/assets/images/Car.svg">
-              <img class="icon" src="/assets/images/Snow.svg">
-              <img class="icon" src="/assets/images/Gym.svg">
-              <img class="icon" src="/assets/images/Cigar.svg">
-              <img class="icon" src="/assets/images/Drink.svg">
-            </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom2.jpeg');"></div>
-              <article class="room-description-card room-description-card--home">
-              <h2 class="title">Romantic Duplex Room</h2>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="price">$445</p>
-              <p class="divisor">/Night</p>
-            </article>
-          </div>
-          <div class="swiper-slide" onclick="window.location.href='room-details'">
-            <article class="icon-bar icon-bar--desktop">
-              <img class="icon" src="/assets/images/Bed.svg">
-              <img class="icon" src="/assets/images/Wifi.svg">
-              <img class="icon" src="/assets/images/Car.svg">
-              <img class="icon" src="/assets/images/Snow.svg">
-              <img class="icon" src="/assets/images/Gym.svg">
-              <img class="icon" src="/assets/images/Cigar.svg">
-              <img class="icon" src="/assets/images/Drink.svg">
-            </article> 
-            <div class="image single-image-container" style="background-image: url('/assets/images/HotelRoom3.jpeg');"></div>
-            <article class="room-description-card room-description-card--home">
-              <h2 class="title">Luxury Honeymoon Room</h2>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <p class="price">$500</p>
-              <p class="divisor">/Night</p>
-            </article>
-          </div>
+          @endforeach
         </div>
         <div class="swiper-button-prev" id="swiper-button-prev--rooms"></div>
         <div class="swiper-button-next" id="swiper-button-next--rooms"></div>
