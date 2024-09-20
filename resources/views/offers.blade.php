@@ -11,7 +11,7 @@
             </div>
         </div>
     </section>
-    @foreach ($rooms as $room)
+    @foreach ($roomsOnOffer as $room)
     <article class="room-offer">
         <div class="image-container">
             <img class="image" src="{{ $room->type->images->first()->url }}"/>
@@ -105,72 +105,24 @@
         <p class="section-title">Popular Rooms</p>
         <div class="swiper swiper--popular-rooms">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img class="image" src="/assets/images/HotelRoom.jpeg"/>
-                <article class="icon-bar icon-bar--rooms-page">
-                    <img class="icon" src="/assets/images/Bed.svg">
-                    <img class="icon" src="/assets/images/Wifi.svg">
-                    <img class="icon" src="/assets/images/Car.svg">
-                    <img class="icon" src="/assets/images/Snow.svg">
-                    <img class="icon" src="/assets/images/Gym.svg">
-                    <img class="icon" src="/assets/images/Cigar.svg">
-                    <img class="icon" src="/assets/images/Drink.svg">
-                </article> 
-                <article class="room-description-card room-description-card--rooms-page">
-                    <h2 class="title">Minimal Duplex Room</h2>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipi<br>sicing elit, sed do eiusmod tempor.
-                    </p>
-                    <div class="booking-container">
-                        <p class="price">$345/Night</p>
-                        <p class="booking">Book now</p>
-                    </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <img class="image" src="/assets/images/HotelRoom2.jpeg"/>
-                <article class="icon-bar icon-bar--rooms-page">
-                    <img class="icon" src="/assets/images/Bed.svg">
-                    <img class="icon" src="/assets/images/Wifi.svg">
-                    <img class="icon" src="/assets/images/Car.svg">
-                    <img class="icon" src="/assets/images/Snow.svg">
-                    <img class="icon" src="/assets/images/Gym.svg">
-                    <img class="icon" src="/assets/images/Cigar.svg">
-                    <img class="icon" src="/assets/images/Drink.svg">
-                </article> 
-                <article class="room-description-card room-description-card--rooms-page">
-                    <h2 class="title">Romantic Duplex Room</h2>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipi<br>sicing elit, sed do eiusmod tempor.
-                    </p>
-                    <div class="booking-container">
-                        <p class="price">$445/Night</p>
-                        <p class="booking">Book now</p>
-                    </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <img class="image" src="/assets/images/HotelRoom3.jpeg"/>
-                <article class="icon-bar icon-bar--rooms-page">
-                    <img class="icon" src="/assets/images/Bed.svg">
-                    <img class="icon" src="/assets/images/Wifi.svg">
-                    <img class="icon" src="/assets/images/Car.svg">
-                    <img class="icon" src="/assets/images/Snow.svg">
-                    <img class="icon" src="/assets/images/Gym.svg">
-                    <img class="icon" src="/assets/images/Cigar.svg">
-                    <img class="icon" src="/assets/images/Drink.svg">
-                </article> 
-                <article class="room-description-card room-description-card--rooms-page">
-                    <h2 class="title">Luxury Honeymoon Room</h2>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipi<br>sicing elit, sed do eiusmod tempor.
-                    </p>
-                    <div class="booking-container">
-                        <p class="price">$500/Night</p>
-                        <p class="booking">Book now</p>
-                    </div>
-                </article>
-              </div>
+              @foreach ($popularRooms as $popularRoom)
+                <div class="swiper-slide">
+                    <img class="image" src="{{ $popularRoom->type->images->first()->url }}"/>
+                    <article class="icon-bar icon-bar--rooms-page">
+                        @foreach ($popularRoom->amenities as $amenity)
+                            <img class="icon" src="/assets/images/{{$amenity->amenity}}.svg">
+                        @endforeach
+                    </article> 
+                    <article class="room-description-card room-description-card--rooms-page">
+                        <h2 class="title">{{ $popularRoom->type->typeName }} {{ $popularRoom->name }}</h2>
+                        <p class="description">{{ $popularRoom->description }}</p>
+                        <div class="booking-container">
+                            <p class="price">${{ $popularRoom->rate }}/Night</p>
+                            <p class="booking">Book now</p>
+                        </div>
+                    </article>
+                </div>
+              @endforeach
             </div>
             <div class="swiper-button-prev" id="swiper-button-prev--rooms"></div>
             <div class="swiper-button-next" id="swiper-button-next--rooms"></div>

@@ -751,6 +751,7 @@ ul {
   font-size: 14px;
   color: #777777;
   margin-bottom: 12px;
+  padding: 0 5%;
 }
 .room-description-card .price, .room-description-card .divisor {
   display: inline-block;
