@@ -29,8 +29,8 @@
         <div class="description-container">
             <div class="header-info">
                 <div class="name-container">
-                    <p class="section-name">DOUBLE BED</p>
-                    <p class="section-title">Luxury Double Bed</p>
+                    <p class="section-name">{{ strtoupper($room->type->typeName) }}</p>
+                    <p class="section-title">{{ $room->type->typeName }} {{ $room->name }}</p>
                 </div>
                 <div class="prices-container prices-container--desktop">
                     <div class="old-price-container">
