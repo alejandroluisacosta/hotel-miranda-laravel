@@ -11,16 +11,17 @@
             </div>
         </div>
     </section>
+    @foreach ($rooms as $room)
     <article class="room-offer">
         <div class="image-container">
-            <img class="image" src="/assets/images/HotelRoom3.jpeg"/>
+            <img class="image" src="{{ $room->type->images->first()->url }}"/>
             <div class="prices-container prices-container--mobile">
                 <div class="old-price-container">
-                    <p class="old-price">$500</p>
+                    <p class="old-price">${{ $room->rate }}</p>
                     <p class="old-price-divisor">/Night</p>
                 </div>
                 <div class="new-price-container">
-                    <p class="new-price">$345</p>
+                    <p class="new-price">${{ $room->offerRate }}</p>
                     <p class="new-price-divisor">/Night</p>
                 </div>
             </div>
@@ -33,11 +34,11 @@
                 </div>
                 <div class="prices-container prices-container--desktop">
                     <div class="old-price-container">
-                        <p class="old-price">$500</p>
+                        <p class="old-price">${{ $room->rate }}</p>
                         <p class="old-price-divisor">/Night</p>
                     </div>
                     <div class="new-price-container">
-                        <p class="new-price">$345</p>
+                        <p class="new-price">${{ $room->offerRate }}</p>
                         <p class="new-price-divisor">/Night</p>
                     </div>
                 </div>
@@ -98,180 +99,7 @@
             <button>BOOK NOW</button>
         </div>
     </article>
-    <article class="room-offer">
-        <div class="image-container">
-            <img class="image" src="/assets/images/HotelRoom2.jpeg"/>
-            <div class="prices-container prices-container--mobile">
-                <div class="old-price-container">
-                    <p class="old-price">$550</p>
-                    <p class="old-price-divisor">/Night</p>
-                </div>
-                <div class="new-price-container">
-                    <p class="new-price">$415</p>
-                    <p class="new-price-divisor">/Night</p>
-                </div>
-            </div>
-        </div>
-        <div class="description-container">
-            <div class="header-info">
-                <div class="name-container">
-                    <p class="section-name">DOUBLE BED</p>
-                    <p class="section-title">Romantic Double Bed</p>
-                </div>
-                <div class="prices-container prices-container--desktop">
-                    <div class="old-price-container">
-                        <p class="old-price">$550</p>
-                        <p class="old-price-divisor">/Night</p>
-                    </div>
-                    <div class="new-price-container">
-                        <p class="new-price">$415</p>
-                        <p class="new-price-divisor">/Night</p>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="bottom-info">
-                <div class="bottom-info__description-container">
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                    <button class="desktop-button">BOOK NOW</button>
-                </div>
-                <div class="amenities">
-                    <div class="amenities-container">
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Air-Conditioner.svg"/>
-                            <p class="name">Air conditioner</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Wifi.svg"/>
-                            <p class="name">High speed WiFi</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Breakfast.svg"/>
-                            <p class="name">Breakfast</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Kitchen.svg"/>
-                            <p class="name">Kitchen</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Cleaning.svg"/>
-                            <p class="name">Cleaning</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Shower.svg"/>
-                            <p class="name">Shower</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Grocery.svg"/>
-                            <p class="name">Grocery</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Bed.svg"/>
-                            <p class="name">Single bed</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Shop.svg"/>
-                            <p class="name">Shop near</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Towel.svg"/>
-                            <p class="name">Towels</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button>BOOK NOW</button>
-        </div>
-    </article>
-    <article class="room-offer">
-        <div class="image-container">
-            <img class="image" src="/assets/images/HotelRoom.jpeg"/>
-            <div class="prices-container prices-container--mobile">
-                <div class="old-price-container">
-                    <p class="old-price">$350</p>
-                    <p class="old-price-divisor">/Night</p>
-                </div>
-                <div class="new-price-container">
-                    <p class="new-price">$285</p>
-                    <p class="new-price-divisor">/Night</p>
-                </div>
-            </div>
-        </div>
-        <div class="description-container">
-            <div class="header-info">
-                <div class="name-container">
-                    <p class="section-name">DOUBLE BED</p>
-                    <p class="section-title">Minimal Duplex Room</p>
-                </div>
-                <div class="prices-container prices-container--desktop">
-                    <div class="old-price-container">
-                        <p class="old-price">$350</p>
-                        <p class="old-price-divisor">/Night</p>
-                    </div>
-                    <div class="new-price-container">
-                        <p class="new-price">$285</p>
-                        <p class="new-price-divisor">/Night</p>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="bottom-info">
-                <div class="bottom-info__description-container">
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                    <button class="desktop-button">BOOK NOW</button>
-                </div>
-                <div class="amenities">
-                    <div class="amenities-container">
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Air-Conditioner.svg"/>
-                            <p class="name">Air conditioner</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Wifi.svg"/>
-                            <p class="name">High speed WiFi</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Breakfast.svg"/>
-                            <p class="name">Breakfast</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Kitchen.svg"/>
-                            <p class="name">Kitchen</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Cleaning.svg"/>
-                            <p class="name">Cleaning</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Shower.svg"/>
-                            <p class="name">Shower</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Grocery.svg"/>
-                            <p class="name">Grocery</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Bed.svg"/>
-                            <p class="name">Single bed</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Shop.svg"/>
-                            <p class="name">Shop near</p>
-                        </div>
-                        <div class="amenity">
-                            <img class="icon" src="/assets/images/Amenities-Towel.svg"/>
-                            <p class="name">Towels</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button>BOOK NOW</button>
-        </div>
-    </article>
+    @endforeach
     <section class="popular-list">
         <p class="section-name">POPULAR LIST</p>
         <p class="section-title">Popular Rooms</p>

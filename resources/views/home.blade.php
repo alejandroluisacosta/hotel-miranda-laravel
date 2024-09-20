@@ -202,7 +202,7 @@
       </div>
       <div class="swiper swiper--rooms--desktop">
         <div class="swiper-wrapper">
-          @foreach ($rooms->slice(0,6) as $room)
+          @foreach ($rooms->slice(0,6) as $room) <!-- Slice will be done on model-->
           <div class="swiper-slide" onclick="window.location.href='rooms/{{ $room->id }}'">
             <article class="icon-bar icon-bar--desktop">
                 @foreach ($room->amenities as $amenity)

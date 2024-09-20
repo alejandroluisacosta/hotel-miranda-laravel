@@ -21,7 +21,7 @@
         @else
         @foreach ($rooms->slice(0,10) as $room)
             <article class="room-list__room" onclick="window.location.href='rooms/<?= $room->id ?>'">
-                <img src="<?= $room->type->images->first()->url; ?>"/>
+                <img src="{{ $room->type->images->first()->url }}"/>
                 <article class="icon-bar icon-bar--rooms-page">
                 @foreach ($room->amenities as $amenity)
                     <img class="icon" src="/assets/images/{{$amenity->amenity}}.svg">
