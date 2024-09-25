@@ -27,6 +27,7 @@
       </div>
       <button class="availability__submit" type="submit">CHECK AVAILABILITY</button>
     </form>
+    <h1>Funcionó</h1>
     <div class="about-features-container">
         <section class="about">
           <div class="about__background">
