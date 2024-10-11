@@ -418,6 +418,20 @@ ul {
   font-size: 14px;
   transform: translateY(-15%);
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
 .availability span {
   color: #BEAD8E;
   font-size: 16px;
