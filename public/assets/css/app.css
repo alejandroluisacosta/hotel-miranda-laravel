@@ -413,6 +413,8 @@ ul {
 .availability__input {
   display: inline-block;
   color: #686868;
+  background-color: var(--miranda-black);
+  border: 0;
   font-size: 14px;
   transform: translateY(-15%);
 }
