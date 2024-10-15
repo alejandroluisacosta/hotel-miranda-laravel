@@ -7,7 +7,7 @@ use App\Models\Room;
 
 class RoomController extends Controller
 {
-    public function index(Request $request) 
+    public function index(Request $request, $id) 
     {
         $checkin = $request->query('checkin');
         $checkout = $request->query('checkout');
