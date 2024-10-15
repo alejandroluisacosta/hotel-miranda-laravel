@@ -1972,6 +1972,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 25px 12%;
   margin-bottom: 24px;
 }
+.room-details-availability__input {
+  background: transparent;
+  border: none;
+}
+
 .room-details-availability .title-container {
   text-align: center;
   font-size: 18px;

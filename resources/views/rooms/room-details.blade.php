@@ -34,12 +34,12 @@
             </div>
             <label class="label" for="check-in-date">Check In</label>
             <div class="input" id="check-in-date">
-                <p>Fri, 14th June 2020</p>
+                <input type="date" name="checkin" placeholder="Check-in date" class="room-details-availability__input"/>
                 <img class="icon" src="/assets/images/Calendar.svg"/>
             </div>
             <label class="label" for="check-out-date">Check Out</label>
             <div class="input" id="check-out-date">
-                <p>Sun, 16th June 2020</p>
+                <input type="date" name="checkout" placeholder="Check-out date" class="room-details-availability__input"/>
                 <img class="icon" src="/assets/images/Calendar.svg"/>
             </div>
             <button>CHECK AVAILABILITY</button>
