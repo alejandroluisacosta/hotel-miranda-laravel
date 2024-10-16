@@ -27,7 +27,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::get('/offers', [OfferController::class, 'index'])->name('offers.index');
 Route::get('/rooms', [RoomController::class, 'index'])->name('rooms.index');
 Route::get('/rooms/{id}', [RoomController::class, 'show'])->name('rooms.show');
-Route::post('/rooms/{id}', [BookingController::class, 'store']->name('bookings.store'));
+Route::post('/rooms/{id}', [BookingController::class, 'store'])->name('bookings.store');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
