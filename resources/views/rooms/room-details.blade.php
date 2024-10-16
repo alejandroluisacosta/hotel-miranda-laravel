@@ -29,6 +29,7 @@
             </p>
         </section>
         <form method="POST" action="{{ route('bookings.store', ['id' => $room->id]) }}" class="room-details-availability">
+            @csrf
             <div class="title-container">
                 <p class="title">Check Availability</p>
             </div>
