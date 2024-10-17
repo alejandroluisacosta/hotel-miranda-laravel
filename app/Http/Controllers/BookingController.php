@@ -14,11 +14,9 @@ class BookingController extends Controller
         $checkin = $request->checkin;
         $checkout = $request->checkout;
 
-        $isRoomAvailable = Room::available($checkin, $checkout)
-                    ->where('id', $id)
-                    ->get();
+        $isRoomAvailable = Room::available($checkin, $checkout)->where('id', $id)->exists();
         
-        if ($isRoomAvailable->isNotEmpty()) {
+        if ($isRoomAvailable) {
             $booking = new Booking;
             $booking->name = "Marcus Aurelius";
             $booking->orderDate = date("Y-m-d");
