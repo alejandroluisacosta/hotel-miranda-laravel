@@ -21,8 +21,8 @@ class BookingController extends Controller
         
         if ($isRoomAvailable) {
             $booking = Booking::create([
-                'name' => array_rand($guestMockNames),
-                'orderDate' => date("Y-m-d"),
+                'name' => $guestMockNames[array_rand($guestMockNames)],
+                'orderDate' => Carbon::now()->format("Y-m-d"),
                 'checkInDate' => $checkin,
                 'checkOutDate' => $checkout,
                 'specialRequest' => "No special requests",
