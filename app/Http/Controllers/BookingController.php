@@ -16,10 +16,12 @@ class BookingController extends Controller
         $checkout = $request->checkout;
 
         $isRoomAvailable = Room::available($checkin, $checkout)->where('id', $id)->exists();
+
+        $guestMockNames = ['Marcus Aurelius', 'Albert Einstein', 'Leonardo Da Vinci'];
         
         if ($isRoomAvailable) {
             $booking = Booking::create([
-                'name' => "Marcus Aurelius",
+                'name' => array_rand($guestMockNames),
                 'orderDate' => date("Y-m-d"),
                 'checkInDate' => $checkin,
                 'checkOutDate' => $checkout,
