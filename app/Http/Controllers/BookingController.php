@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Booking;
 use App\Models\Room;
+use Carbon\Carbon;
 
 class BookingController extends Controller
 {
@@ -17,16 +18,16 @@ class BookingController extends Controller
         $isRoomAvailable = Room::available($checkin, $checkout)->where('id', $id)->exists();
         
         if ($isRoomAvailable) {
-            $booking = new Booking;
-            $booking->name = "Marcus Aurelius";
-            $booking->orderDate = date("Y-m-d");
-            $booking->checkInDate = $checkin;
-            $booking->checkOutDate = $checkout;
-            $booking->specialRequest = "No special requests";
-            $booking->roomType = $room->roomType;
-            $booking->status = "Check-In";
-            $booking->roomId = $id;
-            $booking->save();
+            $booking = Booking::create([
+                'name' => "Marcus Aurelius",
+                'orderDate' => date("Y-m-d"),
+                'checkInDate' => $checkin,
+                'checkOutDate' => $checkout,
+                'specialRequest' => "No special requests",
+                'roomType' => $room->roomType,
+                'status' => "Check-In",
+                'roomId' => $id,
+            ]);
             return redirect('/rooms')->with('status', 'Your booking has been created. Details have been sent to your email.');
         } else {
             return redirect()->back()->withErrors(['message' => 'This room is occupied on the dates you requested.']);
