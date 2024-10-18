@@ -157,5 +157,21 @@
             }).showToast();
         </script>
     @endif
+    @if ($errors->any())
+        <script>
+            console.log({{ json_encode($errors->all()) }});
+            // @foreach ($errors->all() as $error)
+            //     Toastify({
+            //         text: "{{ $error}}",
+            //         duration: 3000,
+            //         position: center,
+            //         stopOnFocus: true,
+            //         style: {
+            //             color: "#C3423F",
+            //         }
+            //     }).showToast();
+            // @endforeach
+        </script>
+    @endif
 </body>
 </html>

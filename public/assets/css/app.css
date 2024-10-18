@@ -1272,7 +1272,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .footer__background {
   padding: 0 5%;
-  background-image: url("/assets/Footer-Background.jpeg");
+  background-image: url("/assets/images/Footer-Background.jpeg");
 }
 .footer .logo-container {
   display: flex;
