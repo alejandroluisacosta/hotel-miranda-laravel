@@ -161,7 +161,7 @@
         <script>
             @foreach ($errors->all() as $error)
                 Toastify({
-                    text: "{{ $error}}",
+                    text: "{{ $error }}",
                     duration: 3000,
                     position: "center",
                     stopOnFocus: true,

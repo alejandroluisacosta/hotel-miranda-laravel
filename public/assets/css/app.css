@@ -703,8 +703,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .icon-bar {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  width: 256px;
+  justify-content: space-around;
+  width: fit-content;
   max-width: 256px;
   box-sizing: border-box;
   z-index: 2;
@@ -720,6 +720,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 16px;
   height: 16px;
   margin-left: unset;
+}
+.icon-bar .icon:not(:last-child) {
+  margin-right: 13px;
 }
 
 .room-description-card {
