@@ -49,7 +49,7 @@
                     <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
-                    <button class="desktop-button">BOOK NOW</button>
+                    <button onclick="window.location.href='/rooms/{{ $room->id }}'" class="desktop-button">BOOK NOW</button>
                 </div>
                 <div class="amenities">
                     <div class="amenities-container">
@@ -107,7 +107,7 @@
             <div class="swiper-wrapper">
               @foreach ($popularRooms as $popularRoom)
                 <div class="swiper-slide">
-                    <img class="image" src="{{ $popularRoom->type->images->first()->url }}"/>
+                    <a href=""><img class="image" src="{{ $popularRoom->type->images->first()->url }}"/></a>
                     <article class="icon-bar icon-bar--rooms-page">
                         @foreach ($popularRoom->amenities as $amenity)
                             <img class="icon" src="/assets/images/{{$amenity->amenity}}.svg">
