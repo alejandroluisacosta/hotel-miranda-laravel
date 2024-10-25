@@ -107,7 +107,7 @@
             <div class="swiper-wrapper">
               @foreach ($popularRooms as $popularRoom)
                 <div class="swiper-slide">
-                    <a href=""><img class="image" src="{{ $popularRoom->type->images->first()->url }}"/></a>
+                    <a href="/rooms/{{ $popularRoom->id }}'"><img class="image" src="{{ $popularRoom->type->images->first()->url }}"/></a>
                     <article class="icon-bar icon-bar--rooms-page">
                         @foreach ($popularRoom->amenities as $amenity)
                             <img class="icon" src="/assets/images/{{$amenity->amenity}}.svg">
